@@ -33,4 +33,5 @@ const onScroll = () => {
   }
 };
 
-window.addEventListener("scroll", throttle(onScroll, 10));
+window.addEventListener("scroll", onScroll);
+// window.addEventListener("scroll", throttle(onScroll, 10));
