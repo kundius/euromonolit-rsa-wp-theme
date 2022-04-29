@@ -75,7 +75,7 @@
 .header-logo {
   margin-top: -38px;
   margin-bottom: -38px;
-  background-image: linear-gradient(71deg,#c32613 0,#e04925 50%,#c32613 100%);
+  background-image: linear-gradient(35deg,#c32613 0,#e04925 50%,#c32613 100%);
   width: 269px;
   display: flex;
   flex-direction: column;
@@ -155,8 +155,19 @@
   border-radius: 50%;
   width: 56px;
   height: 56px;
-  background-image: linear-gradient( 71deg, #c32613 0%, #e04925 50%, #c32613 100%);
+  background-image: linear-gradient( 35deg, #c32613 0%, #e04925 50%, #c32613 100%);
   margin-left: 8px;
   border: none;
   padding: 0;
+}
+
+.header-contacts__callback::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='14px' height='18px'%3E%3Cpath fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M0.422,3.939 C1.973,0.501 4.31,0.71 4.490,0.10 C4.949,0.92 5.419,0.53 5.998,1.84 C6.577,2.116 7.236,3.195 7.430,3.646 C7.624,4.98 7.498,5.124 7.83,5.401 C6.668,5.678 5.429,6.238 5.4,6.462 C4.580,6.687 4.486,7.80 4.534,7.341 C4.718,8.335 6.713,11.934 7.461,12.628 C7.659,12.811 8.49,12.952 8.476,12.733 C8.903,12.513 10.69,11.819 10.536,11.636 C11.2,11.453 11.954,11.918 12.234,12.325 C12.514,12.731 13.77,13.861 13.643,14.899 C14.209,15.936 13.916,16.296 13.733,16.712 C13.550,17.129 11.921,18.478 8.112,17.835 C3.433,17.45 -1.475,8.145 0.422,3.939 L0.422,3.939 ZM4.173,1.278 C4.514,1.106 4.784,1.609 4.443,1.781 C2.678,2.691 1.571,4.562 1.500,6.486 C1.489,6.859 0.904,6.842 0.915,6.469 C0.994,4.359 2.225,2.261 4.173,1.278 L4.173,1.278 Z'/%3E%3C/svg%3E");
 }
