@@ -11,7 +11,7 @@ import "./menuScrollTo";
 import "./inputFile";
 import "./common";
 import "./sitemap";
-import "./scrollUp";
+import "./onScroll";
 
 /**
  * LazySizes configuration
