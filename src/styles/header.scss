@@ -38,19 +38,20 @@
   left: 0px;
   width: 100vw;
   top: calc(22px + 44px);
+  display: flex;
+  align-items: center;
 }
 
 .header_fixed .header-second-wrapper {
   top: 33px;
+  position: fixed;
 }
 
 .header-second {
   background-color: rgba(255, 255, 255, 0.902);
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.17);
   position: absolute;
-  left: 0px;
-  top: -44px;
-  width: 100%;
+  width: 100vw;
   padding: 16px 0;
   transition: .5s ease;
   transition-property: padding-bottom, padding-top, top;
@@ -59,8 +60,6 @@
 .header_fixed .header-second {
   padding-bottom: 5px;
   padding-top: 5px;
-  position: fixed;
-  top: -33px;
 }
 
 .header-placeholder {
