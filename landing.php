@@ -14,6 +14,26 @@ Template Name: Главная
     <div class="ui-wrapper">
       <?php get_template_part('partials/header') ?>
 
+      <section class="intro">
+        <div class="ui-container">
+          <div class="intro-layout">
+            <div class="intro-layout__content">
+              <div class="intro-content">
+                <div class="intro-content__title">Ремонт опалубки</div>
+                <div class="intro-content__subtitle">в Санкт-Петербурге и области</div>
+                <div class="intro-content__desc">
+                  Качественная опалубка ведущих европейских<br />
+                  и российских производителей со склада в Санкт-Петербурге
+                </div>
+              </div>
+            </div>
+            <div class="intro-layout__form">
+              form
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="ui-content">
         <?php the_content() ?>
       </div>

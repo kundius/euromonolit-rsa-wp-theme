@@ -87,7 +87,7 @@
 }
 
 body {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'PT Astra Sans', sans-serif;
 }
 
 .ui-wrapper {
@@ -102,6 +102,12 @@ body {
   width: 1320px;
   max-width: 100%;
   box-sizing: border-box;
+
+  &_large {
+    @include above(lg) {
+      width: 1800px;
+    }
+  }
 
   @include below(lg) {
     padding-left: 16px;
