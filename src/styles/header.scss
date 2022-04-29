@@ -43,11 +43,10 @@
   padding: 16px 0;
 }
 
-.header-second_fixed {
+.header_fixed .header-second {
   padding-bottom: 5px;
   position: fixed;
-  top: -32px;
-
+  top: -10px;
 }
 
 .header-placeholder {
@@ -71,7 +70,13 @@
   justify-content: center;
   padding-top: 38px;
   padding-bottom: 38px;
+  text-decoration: none;
   align-self: normal;
+}
+
+.header_fixed .header-logo {
+  padding-bottom: 5px;
+  margin-bottom: -5px;
 }
 
 .header-logo__image {
