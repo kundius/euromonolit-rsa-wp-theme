@@ -41,14 +41,15 @@
   top: 22px;
   width: 100vw;
   padding: 16px 0;
-  transition: .5s ease;
-  transition-property: padding-bottom;
+  transition: all .5s ease;
+  transition-property: padding-bottom, padding-top;
 }
 
 .header_fixed .header-second {
   padding-bottom: 5px;
+  padding-top: 5px;
   position: fixed;
-  top: -10px;
+  top: -0px;
 }
 
 .header-placeholder {
@@ -74,13 +75,15 @@
   padding-bottom: 38px;
   text-decoration: none;
   align-self: normal;
-  transition: .5s ease;
-  transition-property: padding-bottom, margin-bottom;
+  transition: all .5s ease;
+  // transition-property: padding-bottom, margin-bottom;
 }
 
 .header_fixed .header-logo {
   padding-bottom: 5px;
   margin-bottom: -5px;
+  padding-top: 5px;
+  margin-top: -5px;
 }
 
 .header-logo__image {
