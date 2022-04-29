@@ -12,7 +12,7 @@ Template Name: Главная
     <?php wp_body_open() ?>
 
     <div class="ui-wrapper">
-      <?php get_template_part('partials/header') ?>
+      <?php get_template_part('partials/header', null, ['is_float' => true]) ?>
 
       <section class="intro">
         <div class="ui-container">

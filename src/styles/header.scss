@@ -5,6 +5,14 @@
   background-size: cover;
 }
 
+.header_float {
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 .header-first {
 
 }
@@ -158,6 +166,7 @@
   color: #000;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
+  text-decoration: none;
 }
 
 .header-menu > .menu-item > a:hover {
