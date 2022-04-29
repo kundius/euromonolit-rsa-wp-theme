@@ -39,7 +39,15 @@
   position: absolute;
   left: 0px;
   top: 22px;
-  width: 100%;
+  width: 100vw;
+  padding: 16px 0;
+}
+
+.header-second_fixed {
+  padding-bottom: 5px;
+  position: fixed;
+  top: -32px;
+
 }
 
 .header-placeholder {
@@ -53,15 +61,17 @@
 }
 
 .header-logo {
-  display: block;
-  margin-top: -22px;
-  margin-bottom: -22px;
-  background-image: linear-gradient( 71deg, #c32613 0%, #e04925 50%, #c32613 100%);
+  margin-top: -38px;
+  margin-bottom: -38px;
+  background-image: linear-gradient(71deg,#c32613 0,#e04925 50%,#c32613 100%);
   width: 269px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  align-self: normal;
 }
 
 .header-logo__image {

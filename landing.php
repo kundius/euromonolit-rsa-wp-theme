@@ -35,6 +35,7 @@ Template Name: Главная
       </section>
 
       <div class="ui-content">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <?php the_content() ?>
       </div>
       
