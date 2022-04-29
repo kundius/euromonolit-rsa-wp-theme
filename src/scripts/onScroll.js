@@ -25,7 +25,7 @@ const onScroll = () => {
   }
 
   if (header) {
-    if (scrollPosition > 22) {
+    if (scrollPosition > 27) {
       header.classList.add("header_fixed");
     } else {
       header.classList.remove("header_fixed");
