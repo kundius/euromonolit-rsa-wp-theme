@@ -1,4 +1,4 @@
-<section class="header<?php echo ($args['is_float'] ? 'header_float' : '') ?>">
+<section class="header<?php echo ($args['is_float'] ? ' header_float' : '') ?>">
   <div class="header-first">
     <div class="ui-container ui-container_large header-first__container">
       <div class="header-address">
