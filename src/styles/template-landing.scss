@@ -365,6 +365,14 @@
   height: calc(26px * 3);
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: .5s ease;
+  transition-property: transform, color;
+  will-change: transform, color;
+}
+
+.catalog-card:hover .catalog-card__title {
+  color: #ff240b;
+  transform: scale(1.1);
 }
 
 .catalog-card__more {
