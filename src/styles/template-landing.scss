@@ -335,19 +335,36 @@
   margin: 0;
   padding: 0;
   display: block;
+  position: relative;
+}
+
+.catalog-card__image::before {
+  content: '';
+  display: block;
+  padding-top: calc(240 / 400 / 100%);
+}
+
+.catalog-card__image-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   transition: .5s ease;
 }
 
-.catalog-card:hover .catalog-card__image {
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-top: -20px;
+.catalog-card:hover .catalog-card__image-wrap {
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
 }
 
 .catalog-card__image img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .catalog-card__body {
