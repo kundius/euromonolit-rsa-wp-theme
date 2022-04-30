@@ -34,6 +34,10 @@ Template Name: Главная
                   обратный звонок
                 </div>
 
+                <div class="intro-form__subtitle">
+                  и получите бесплатную консультацию
+                </div>
+
                 <div class="intro-form__row">
                   <input type="text" name="your-name" class="ui-input" placeholder="Имя:" />
                 </div>

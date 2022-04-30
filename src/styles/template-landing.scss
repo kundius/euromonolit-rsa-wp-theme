@@ -67,11 +67,10 @@
 }
 
 .intro-form {
-  border: 1px solid rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.38);
   padding: 35px 42px 23px;
   position: relative;
+  background-color: rgba(63, 65, 63, 0.702);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.38);
 
   @include below(lg) {
     padding-top: 25px;
@@ -84,9 +83,15 @@
   font-size: 24px;
   line-height: 1;
   text-align: center;
-  color: #333;
+  color: #ffffff;
   font-weight: bold;
   margin-bottom: 25px;
+}
+
+.intro-form__subtitle {
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
 }
 
 .intro-form__loader {
