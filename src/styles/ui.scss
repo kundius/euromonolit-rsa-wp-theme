@@ -380,34 +380,34 @@ body {
   color: #f60;
 }
 
-.ui-arrow-right {
-  display: inline-block;
-  width: 17px;
-  height: 11px;
-  position: relative;
-  vertical-align: middle;
-}
+// .ui-arrow-right {
+//   display: inline-block;
+//   width: 17px;
+//   height: 11px;
+//   position: relative;
+//   vertical-align: middle;
+// }
 
-.ui-arrow-right::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background: currentColor;
-  top: 5px;
-  left: 0;
-}
-.ui-arrow-right::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-right: 1px solid currentColor;
-  border-bottom: 1px solid currentColor;
-  right: 0;
-  top: 2px;
-  transform: rotate(-45deg);
-}
+// .ui-arrow-right::before {
+//   content: '';
+//   position: absolute;
+//   width: 100%;
+//   height: 1px;
+//   background: currentColor;
+//   top: 5px;
+//   left: 0;
+// }
+// .ui-arrow-right::after {
+//   content: '';
+//   position: absolute;
+//   width: 6px;
+//   height: 6px;
+//   border-right: 1px solid currentColor;
+//   border-bottom: 1px solid currentColor;
+//   right: 0;
+//   top: 2px;
+//   transform: rotate(-45deg);
+// }
 
 .ui-input-file {
   position: relative;
