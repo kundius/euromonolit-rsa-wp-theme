@@ -169,6 +169,7 @@ $products = new WP_Query([
                   <div class="catalog-card__more">
                     <a href="<?php the_permalink() ?>" class="ui-button-more">
                       Узнать больше
+                      <span class="ui-button-more__arrow"></span>
                     </a>
                   </div>
                 </div>
