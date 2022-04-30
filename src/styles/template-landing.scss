@@ -273,17 +273,19 @@
   font-size: 18px;
   line-height: 24px;
   color: #000;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -50px;
 }
 
-.landing-catalog__content p {
-  width: calc(50% - 25px);
-  float: left;
-  margin: 12px 0;
+.landing-catalog__content-left {
+  padding-left: 50px;
+  width: 50%;
 }
 
-.landing-catalog__content p:nth-child(2n) {
-  float: right;
+.landing-catalog__content-right {
+  padding-left: 50px;
+  width: 50%;
 }
 
 .landing-catalog__products {

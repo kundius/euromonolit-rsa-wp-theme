@@ -137,9 +137,19 @@ $products = new WP_Query([
           </div>
           <?php endif ?>
 
-          <?php if (!empty($landing_catalog['content'])): ?>
+          <?php if ($content = $landing_catalog['content']): ?>
           <div class="landing-catalog__content">
-            <?php echo $landing_catalog['content'] ?>
+            <?php if (!empty($content['left'])): ?>
+            <div class="landing-catalog__content-left">
+              <?php echo $content['left'] ?>
+            </div>
+            <?php endif ?>
+
+            <?php if (!empty($content['right'])): ?>
+            <div class="landing-catalog__content-right">
+              <?php echo $content['right'] ?>
+            </div>
+            <?php endif ?>
           </div>
           <?php endif ?>
 
