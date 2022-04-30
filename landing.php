@@ -30,8 +30,8 @@ Template Name: Главная
             <div class="intro-layout__form">
               <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="intro-form js-form">
                 <div class="intro-form__title">
-                  Заказать<br />
-                  обратный звонок
+                  Заказать обратный<br />
+                  звонок
                 </div>
 
                 <div class="intro-form__subtitle">
