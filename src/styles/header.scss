@@ -11,6 +11,7 @@
   left: 0;
   top: 0;
   width: 100%;
+  overflow: hidden;
 }
 
 .header-first {
@@ -74,6 +75,7 @@
   top: calc(22px + 44px);
   display: flex;
   align-items: center;
+  z-index: 200;
 }
 
 .header_fixed .header-second-wrapper {
