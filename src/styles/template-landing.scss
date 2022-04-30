@@ -333,12 +333,15 @@
   margin: 0;
   padding: 0;
   display: block;
-  transition: transform .5s ease;
+  filter: grayscale(30%);
+  transition: .5s ease;
+  transition-property: transform, filter;
   will-change: transform;
 }
 
 .catalog-card:hover .catalog-card__image {
   transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 .catalog-card__image img {
