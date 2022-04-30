@@ -388,3 +388,7 @@
   bottom: 0;
   z-index: 20;
 }
+
+.catalog-card:hover .catalog-card__more .ui-button-more::after {
+  transform: scale(1.1);
+}
