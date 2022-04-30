@@ -270,10 +270,24 @@
 
 .landing-catalog__content {
   margin-top: 50px;
-  column-count: 2;
   font-size: 18px;
   line-height: 24px;
   color: #000;
+}
+
+.landing-catalog__content::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.landing-catalog__content p {
+  width: calc(50% - 25px);
+  float: left;
+}
+
+.landing-catalog__content p:nth-child(2n) {
+  float: right;
 }
 
 .landing-catalog__products {
