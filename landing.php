@@ -164,7 +164,7 @@ $products = new WP_Query([
                 </figure>
                 <div class="catalog-card__body">
                   <h2 class="catalog-card__title">
-                    <?php the_title() ?>
+                    <?php echo (get_field('product_title-in-card') ?: get_the_title()) ?>
                   </h2>
                   <div class="catalog-card__more">
                     <a href="<?php the_permalink() ?>" class="ui-button-more">

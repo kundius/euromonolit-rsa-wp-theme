@@ -370,9 +370,13 @@
   will-change: transform, color;
 }
 
+.catalog-card__title span {
+  text-transform: none;
+}
+
 .catalog-card:hover .catalog-card__title {
   color: #ff240b;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .catalog-card__more {
