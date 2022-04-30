@@ -12,6 +12,13 @@
 
 .intro-layout__content {
   padding-bottom: 80px;
+  flex-grow: 1;
+}
+
+.intro-layout__form {
+  width: 386px;
+  margin-left: 60px;
+  flex-shrink: 0;
 }
 
 .intro-content {
@@ -57,10 +64,6 @@
 
 .intro-content__desc span {
   background-color: rgb(58, 60, 57);
-}
-
-.intro-layout__form {
-
 }
 
 .intro-form {
