@@ -455,6 +455,9 @@
 
 .landing-order-form__rules {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
 }
 
 .landing-order-form__success {
