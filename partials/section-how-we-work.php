@@ -1,4 +1,4 @@
-<?php $how_we_work = get_field('theme_how-we-work') ?>
+<?php $how_we_work = get_field('theme_how-we-work', 'option') ?>
 <section class="how-we-work">
   <div class="ui-container">
     <div class="how-we-work__title">
