@@ -448,6 +448,10 @@
   flex-grow: 2;
 }
 
+.landing-order-form__submit .ui-button-submit {
+  width: 100%;
+}
+
 .landing-order-form__rules {
   width: 100%;
 }
@@ -457,5 +461,9 @@
 }
 
 .landing-order-form__failed {
+  display: none;
+}
+
+.landing-order-form__loader {
   display: none;
 }

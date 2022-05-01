@@ -151,6 +151,12 @@ body {
     font-size: 14px;
     height: 34px;
   }
+
+  &_flat {
+    height: 64px;
+    border-radius: 0;
+    border: none;
+  }
 }
 
 .ui-textarea {
@@ -174,6 +180,11 @@ body {
   &_small {
     font-size: 14px;
     padding: 10px;
+  }
+
+  &_flat {
+    border-radius: 0;
+    border: none;
   }
 }
 

@@ -206,7 +206,7 @@ $products = new WP_Query([
               <div class="landing-order-form__submit">
                 <button type="submit" class="ui-button-submit ui-button-submit_glare">
                   <span class="ui-loader-square landing-order-form__loader"></span>
-                  Отправить
+                  Заказать консультацию
                 </button>
               </div>
 
