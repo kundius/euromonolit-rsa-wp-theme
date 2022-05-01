@@ -269,9 +269,11 @@ $products = new WP_Query([
             </div>
             <div class="landing-about-layout__include">
               <div class="repair-include">
+                <div class="repair-include__sep-1"></div>
                 <div class="repair-include__title">
                   <?php echo $landing_about['include']['title'] ?>
                 </div>
+                <div class="repair-include__sep-2"></div>
                 <div class="repair-include__list">
                   <?php foreach ($landing_about['include']['items'] as $item): ?>
                   <div class="repair-include__item">
