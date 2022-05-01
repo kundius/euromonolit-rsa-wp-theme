@@ -598,12 +598,10 @@
   align-items: center;
   flex-wrap: wrap;
   margin-left: -40px;
-  margin-top: -100px;
 }
 
 .landing-about-layout__image {
   padding-left: 40px;
-  padding-top: 100px;
   display: flex;
   justify-content: center;
   width: 50%;
@@ -611,14 +609,11 @@
 
 .landing-about-layout__content {
   padding-left: 40px;
-  padding-top: 100px;
   width: 50%;
 }
 
-.landing-about-layout__include {
-  padding-left: 40px;
-  padding-top: 100px;
-  width: 100%;
+.landing-about__include {
+  margin-top: 100px;
 }
 
 .landing-about__image {
