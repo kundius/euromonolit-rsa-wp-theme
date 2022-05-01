@@ -480,8 +480,8 @@ body {
   line-height: 14px;
   color: currentColor;
   position: relative;
-  padding-left: 26px;
-  display: block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .ui-rules input {
@@ -489,17 +489,17 @@ body {
 }
 
 .ui-rules span {
-  position: absolute;
-  left: 0;
-  top: 2px;
+  position: relative;
   border-radius: 2px;
   box-sizing: border-box;
   display: block;
   width: 18px;
   height: 18px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #0a0f37;
   cursor: pointer;
+  margin-right: 8px;
+  align-self: flex-start;
 }
 
 .ui-rules span::before {
