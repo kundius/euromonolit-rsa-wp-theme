@@ -491,6 +491,7 @@ body {
 .ui-rules span:first-of-type {
   position: relative;
   border-radius: 2px;
+  flex-shrink: 0;
   box-sizing: border-box;
   display: block;
   width: 18px;
