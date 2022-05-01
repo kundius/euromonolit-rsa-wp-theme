@@ -662,23 +662,13 @@
 }
 
 .repair-include__gap-1 {
-  width: 100px;
+  width: 68px;
+  flex-shrink: 20;
 }
 
 .repair-include__gap-2 {
-  width: 100px;
-}
-
-.repair-include__layout {
-  display: flex;
-}
-
-.repair-include__layout-title {
-
-}
-
-.repair-include__layout-list {
-
+  width: 90px;
+  flex-shrink: 6;
 }
 
 .repair-include__title {
@@ -691,13 +681,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 371px;
+  width: 370px;
   height: 189px;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .repair-include__list {
-  width: 640px;
+  width: 630px;
+  flex-shrink: 1;
 }
 
 .repair-include__item {
