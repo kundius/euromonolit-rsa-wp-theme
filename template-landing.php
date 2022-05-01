@@ -334,7 +334,7 @@ $sticky_posts = new WP_Query([
       <?php get_template_part('partials/section-how-we-work') ?>
 
       <section class="section-ask">
-        <div class="ui-container">
+        <div class="ui-container section-ask__container">
           <div class="section-ask__layout">
             <div class="section-ask__layout-before">
 

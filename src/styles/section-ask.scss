@@ -6,6 +6,30 @@
   padding-bottom: 32px;
 }
 
+.section-ask__container {
+  position: relative;
+}
+
+.section-ask__container::before {
+  content: '';
+  background-color: rgba(187, 192, 195, 0.569);
+  position: absolute;
+  width: 124px;
+  height: 124px;
+  right: -240px;
+  top: -125px;
+}
+
+.section-ask__container::after {
+  content: '';
+  background-color: rgba(208, 214, 217, 0.361);
+  position: absolute;
+  right: -136px;
+  top: -21px;
+  width: 81px;
+  height: 81px;
+}
+
 .section-ask__layout {
   display: flex;
   flex-wrap: wrap;
@@ -61,6 +85,10 @@
 
 .ask-form__submit {
   margin-top: 16px;
+}
+
+.ask-form__submit .ui-button-submit {
+  width: 100%;
 }
 
 .ask-form__rules {
