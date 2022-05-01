@@ -32,6 +32,10 @@
   left: 0;
 }
 
+.how-we-work__item:first-child:after {
+  display: none;
+}
+
 .how-we-work__item::before {
   content: '';
   position: absolute;
@@ -40,6 +44,10 @@
   left: calc(50% + 20px);
   top: 20px;
   right: 0;
+}
+
+.how-we-work__item:last-child:before {
+  display: none;
 }
 
 .how-we-work__item-number {
