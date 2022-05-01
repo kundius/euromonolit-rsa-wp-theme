@@ -32,7 +32,7 @@
   left: 0;
 }
 
-.how-we-work__item:first-child:after {
+.how-we-work__item:first-child::after {
   display: none;
 }
 
@@ -46,7 +46,7 @@
   right: 0;
 }
 
-.how-we-work__item:last-child:before {
+.how-we-work__item:last-child::before {
   display: none;
 }
 
@@ -70,12 +70,16 @@
 .how-we-work__item-arrow {
   width: 8px;
   height: 8px;
-  border-right: 2px solid #c2c2c3;
-  border-bottom: 2px solid #c2c2c3;
+  border-right: 2px solid #4c5456;
+  border-bottom: 2px solid #4c5456;
   transform: rotate(-45deg);
   position: absolute;
-  top: 0;
+  top: 17px;
   left: 100%;
+}
+
+.how-we-work__item:last-child .how-we-work__item-arrow {
+  display: none;
 }
 
 .how-we-work__item-icon {
@@ -96,7 +100,7 @@
   color: #04293f;
   font-size: 16px;
   line-height: 14px;
-  max-width: 232px;
+  max-width: 168px;
   margin-left: auto;
   margin-right: auto;
 }
