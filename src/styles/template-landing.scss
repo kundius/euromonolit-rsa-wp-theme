@@ -739,7 +739,8 @@
 
 .landing-articles__title::before {
   content: '';
-  background-color: rgb(210, 56, 28);
+  border: 2px solid rgb(210, 56, 28);
+  border-radius: 50%;
   width: 58px;
   height: 58px;
   margin: 0 auto 10px;
