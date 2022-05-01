@@ -269,22 +269,26 @@ $products = new WP_Query([
             </div>
             <div class="landing-about-layout__include">
               <div class="repair-include">
-                <div class="repair-include__sep-1"></div>
-                <div class="repair-include__title">
-                  <?php echo $landing_about['include']['title'] ?>
-                </div>
-                <div class="repair-include__sep-2"></div>
-                <div class="repair-include__list">
-                  <?php foreach ($landing_about['include']['items'] as $item): ?>
-                  <div class="repair-include__item">
-                    <div class="repair-include__item-icon">
-                      <img src="<?php echo $item['icon']['url'] ?>" alt="<?php echo $item['icon']['title'] ?>" />
-                    </div>
-                    <div class="repair-include__item-name">
-                      <?php echo $item['name'] ?>
+                <div class="repair-include__layout">
+                  <div class="repair-include__layout-title">
+                    <div class="repair-include__title">
+                      <span><?php echo $landing_about['include']['title'] ?></span>
                     </div>
                   </div>
-                  <?php endforeach ?>
+                  <div class="repair-include__layout-list">
+                    <div class="repair-include__list">
+                      <?php foreach ($landing_about['include']['items'] as $item): ?>
+                      <div class="repair-include__item">
+                        <div class="repair-include__item-icon">
+                          <img src="<?php echo $item['icon']['url'] ?>" alt="<?php echo $item['icon']['title'] ?>" />
+                        </div>
+                        <div class="repair-include__item-name">
+                          <?php echo $item['name'] ?>
+                        </div>
+                      </div>
+                      <?php endforeach ?>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

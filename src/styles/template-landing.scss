@@ -661,12 +661,16 @@
   align-items: flex-start;
 }
 
-.repair-include__sep-1 {
-  flex-grow: 1;
+.repair-include__layout {
+  display: flex;
 }
 
-.repair-include__sep-2 {
-  flex-grow: 1;
+.repair-include__layout-title {
+
+}
+
+.repair-include__layout-list {
+
 }
 
 .repair-include__title {
@@ -676,7 +680,10 @@
   color: #fff;
   font-weight: bold;
   background: #d2381c;
-  padding: 40px 65px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 40px 65px 60px;
 }
 
 .repair-include__list {
