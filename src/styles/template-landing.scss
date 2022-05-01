@@ -593,21 +593,21 @@
   padding-bottom: 100px;
 }
 
-.landing-about-layout {
+.landing-about__layout {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-left: -40px;
 }
 
-.landing-about-layout__image {
+.landing-about__layout-image {
   padding-left: 40px;
   display: flex;
   justify-content: center;
   width: 50%;
 }
 
-.landing-about-layout__content {
+.landing-about__layout-content {
   padding-left: 40px;
   width: 50%;
 }

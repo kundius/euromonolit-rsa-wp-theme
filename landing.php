@@ -247,15 +247,15 @@ $products = new WP_Query([
       <?php $landing_about = get_field('landing_about') ?>
       <section class="landing-about">
         <div class="ui-container">
-          <div class="landing-about-layout">
+          <div class="landing-about__layout">
             <?php if (!empty($landing_about['image'])): ?>
-            <div class="landing-about-layout__image">
+            <div class="landing-about__layout-image">
               <figure class="landing-about__image">
                 <img src="<?php echo $landing_about['image']['url'] ?>" alt="<?php echo $landing_about['image']['title'] ?>" />
               </figure>
             </div>
             <?php endif ?>
-            <div class="landing-about-layout__content">
+            <div class="landing-about__layout-content">
               <?php if (!empty($landing_about['title'])): ?>
               <h2 class="landing-about__title">
                 <?php echo $landing_about['title'] ?>
@@ -268,7 +268,7 @@ $products = new WP_Query([
               <?php endif ?>
             </div>
           </div>
-          
+
           <div class="landing-about__include">
             <div class="repair-include">
               <div class="repair-include__gap-1"></div>
