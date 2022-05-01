@@ -123,7 +123,7 @@ $products = new WP_Query([
 
       <?php $landing_catalog = get_field('landing_catalog') ?>
       <section class="landing-catalog">
-        <div class="ui-container">
+        <div class="ui-container landing-catalog__container">
 
           <?php if (!empty($landing_catalog['title'])): ?>
           <div class="landing-catalog__title">

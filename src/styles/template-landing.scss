@@ -240,6 +240,30 @@
   padding-bottom: 101px;
 }
 
+.landing-catalog__container {
+  position: relative;
+}
+
+.landing-catalog__container::before {
+  content: '';
+  background-color: rgba(187, 192, 195, 0.38);
+  position: absolute;
+  right: -139px;
+  top: -63px;
+  width: 124px;
+  height: 124px;  
+}
+
+.landing-catalog__container::after {
+  content: '';
+  background-color: rgb(255, 36, 11);
+  width: 16px;
+  height: 16px;  
+  position: absolute;
+  right: -183px;
+  top: -117px;
+}
+
 .landing-catalog__title {
   font-size: 32px;
   line-height: 36px;
