@@ -302,16 +302,16 @@ $sticky_posts = new WP_Query([
         </div>
       </section>
 
-      <section class="landing-articles">
-        <div class="ui-container landing-articles__container">
-          <div class="landing-articles__title">
+      <section class="section-articles">
+        <div class="ui-container section-articles__container">
+          <div class="section-articles__title">
             Спецпредложение
           </div>
-          <div class="landing-articles__items">
-            <div class="landing-articles__grid">
+          <div class="section-articles__items">
+            <div class="section-articles__grid">
               <?php while ($sticky_posts->have_posts()): ?>
               <?php $sticky_posts->the_post() ?>
-              <div class="landing-articles__grid-cell">
+              <div class="section-articles__grid-cell">
                 <article class="articles-item">
                   <div class="articles-item__date"><?php the_date('d.m.Y') ?></div>
                   <div class="articles-item__title">

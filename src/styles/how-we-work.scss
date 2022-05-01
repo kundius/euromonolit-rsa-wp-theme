@@ -1,6 +1,6 @@
 .how-we-work {
-  padding-top: 40px;
-  padding-bottom: 64px;
+  padding-top: 36px;
+  padding-bottom: 66px;
   background: #f9f9f9;
 }
 
@@ -10,7 +10,7 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 1;
-  margin-bottom: 64px;
+  margin-bottom: 62px;
 }
 
 .how-we-work__items {
@@ -76,6 +76,7 @@
   position: absolute;
   top: 17px;
   left: 100%;
+  z-index: 2;
 }
 
 .how-we-work__item:last-child .how-we-work__item-arrow {
