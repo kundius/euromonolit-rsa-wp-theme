@@ -8,6 +8,15 @@ $products = new WP_Query([
   'order' => 'ASC',
   'orderby' => 'menu_order',
 ]);
+$sticky = get_option('sticky_posts');
+$sticky_posts = new WP_Query([
+	'posts_per_page' => 3,
+  'post_type' => 'post',
+  'order' => 'DESC',
+  'orderby' => 'date',
+  'cat' => 3,
+  'post__in' => $sticky,
+]);
 ?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes() ?> itemscope itemtype="http://schema.org/WebSite">
@@ -288,6 +297,34 @@ $products = new WP_Query([
                 </div>
                 <?php endforeach ?>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-articles">
+        <div class="ui-container landing-articles__container">
+          <div class="landing-articles__title">
+            Спецпредложение
+          </div>
+          <div class="landing-articles__items">
+            <div class="landing-articles__grid">
+              <?php while ($sticky_posts->have_posts()): ?>
+              <?php $sticky_posts->the_post() ?>
+              <div class="landing-articles__grid-cell">
+                <article class="articles-item">
+                  <div class="articles-item__date"><?php the_date('d.m.Y') ?></div>
+                  <div class="articles-item__title">
+                    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                  </div>
+                  <div class="articles-item__desc">
+                    <?php the_excerpt() ?>
+                    <a href="<?php the_permalink() ?>">...</a>
+                  </div>
+                </article>
+              </div>
+              <?php endwhile?>
+              <?php wp_reset_postdata() ?>
             </div>
           </div>
         </div>
