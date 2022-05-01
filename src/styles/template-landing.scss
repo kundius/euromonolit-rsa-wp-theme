@@ -357,7 +357,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 34px 30px;
+  padding: 32px 30px;
 }
 
 .catalog-card__title {
@@ -366,6 +366,7 @@
   text-transform: uppercase;
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 19px;
   font-weight: bold;
   text-align: center;
   height: calc(26px * 3);
