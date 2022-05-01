@@ -488,7 +488,7 @@ body {
   display: none;
 }
 
-.ui-rules span {
+.ui-rules span:first-of-type {
   position: relative;
   border-radius: 2px;
   box-sizing: border-box;
@@ -502,7 +502,7 @@ body {
   align-self: flex-start;
 }
 
-.ui-rules span::before {
+.ui-rules span:first-of-type::before {
   content: '';
   display: block;
   position: absolute;
@@ -517,7 +517,7 @@ body {
   display: none;
 }
 
-.ui-rules input:checked + span::before {
+.ui-rules input:checked + span:first-of-type::before {
   display: block;
 }
 

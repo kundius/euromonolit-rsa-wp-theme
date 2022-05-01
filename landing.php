@@ -63,7 +63,7 @@ $products = new WP_Query([
                     <label class="ui-rules">
                       <input type="checkbox" name="rules" value="1" class="form-checkbox">
                       <span></span>
-                      Прочитал(-а) <a href="<?php the_permalink(49) ?>" target="_blank">Пользовательское соглашение</a> и&nbsp;соглашаюсь с&nbsp;<a href="<?php the_permalink(3) ?>" target="_blank">Политикой конфиденциальности</a>
+                      <span>Прочитал(-а) <a href="<?php the_permalink(49) ?>" target="_blank">Пользовательское соглашение</a> и&nbsp;соглашаюсь с&nbsp;<a href="<?php the_permalink(3) ?>" target="_blank">Политикой конфиденциальности</a></span>
                     </label>
                   </span>
                 </div>
@@ -215,7 +215,7 @@ $products = new WP_Query([
                   <label class="ui-rules">
                     <input type="checkbox" name="rules" value="1" class="form-checkbox">
                     <span></span>
-                    Прочитал(-а) <a href="<?php the_permalink(49) ?>" target="_blank">Пользовательское соглашение</a> и&nbsp;соглашаюсь с&nbsp;<a href="<?php the_permalink(3) ?>" target="_blank">Политикой конфиденциальности</a>
+                    <span>Прочитал(-а) <a href="<?php the_permalink(49) ?>" target="_blank">Пользовательское соглашение</a> и&nbsp;соглашаюсь с&nbsp;<a href="<?php the_permalink(3) ?>" target="_blank">Политикой конфиденциальности</a></span>
                   </label>
                 </span>
               </div>
