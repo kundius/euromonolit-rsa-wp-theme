@@ -156,6 +156,25 @@ body {
     height: 64px;
     border-radius: 0;
     border: none;
+    background: #fff;
+  }
+}
+
+.ui-input-flat {
+  border: none;
+  background-color: #fff;
+  padding: 0 24px;
+  height: 64px;
+  font-size: 16px;
+  color: #333;
+  font-family: inherit;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+
+  ._error & {
+    color: #e60f0f;
+    background-color: #ffe5e5;
   }
 }
 
@@ -180,11 +199,6 @@ body {
   &_small {
     font-size: 14px;
     padding: 10px;
-  }
-
-  &_flat {
-    border-radius: 0;
-    border: none;
   }
 }
 

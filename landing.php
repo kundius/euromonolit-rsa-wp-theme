@@ -194,12 +194,12 @@ $products = new WP_Query([
           <div class="landing-order__form">
             <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="landing-order-form js-form">
               <div class="landing-order-form__field">
-                <input type="text" name="your-name" class="ui-input ui-input_flat" placeholder="Имя:" />
+                <input type="text" name="your-name" class="ui-input-flat" placeholder="Имя:" />
               </div>
 
               <div class="landing-order-form__field">
                 <span class="wpcf7-form-control-wrap your-phone">
-                  <input type="tel" name="your-phone" value="" class="ui-input ui-input_flat" placeholder="Телефон*">
+                  <input type="tel" name="your-phone" value="" class="ui-input-flat" placeholder="Телефон*">
                 </span>
               </div>
 
