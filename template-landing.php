@@ -403,11 +403,6 @@ $sticky_posts = new WP_Query([
           </div>
         </div>
       </section>
-
-      <div class="ui-content">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <?php the_content() ?>
-      </div>
       
       <?php get_template_part('partials/footer') ?>
     </div>

@@ -1,14 +1,27 @@
+<div>
+    <div class="footer__counters">
+      <?php the_field('theme_counters', 'options') ?>
+    </div>
+</div>
+
 <section class="footer">
   <div class="ui-container footer__container">
     <div class="footer__copyright">
       <?php the_field('theme_copyright', 'options') ?>
     </div>
-    <div class="footer__counters">
-      <?php the_field('theme_counters', 'options') ?>
+
+    <div class="footer__links">
+      <div class="footer__links-item">
+        <a href="<?php the_permalink(297) ?>">Карта сайта</a>
+      </div>
+      <div class="footer__links-item">
+        <a href="<?php the_permalink(297) ?>">Пользовательское соглашение</a>
+      </div>
+      <div class="footer__links-item">
+        <a href="<?php the_permalink(297) ?>">Политика обработки персональных данных</a>
+      </div>
     </div>
-    <div class="footer__map">
-      <a href="<?php the_permalink(297) ?>">Карта сайта</a>
-    </div>
+    
     <div class="footer__creator">
       <a href="https://domenart-studio.ru/" target="_blank">
         <img src="<?php bloginfo('template_url')?>/dist/images/creator.png" alt="Разработка и продвижение сайтов «ДоменАРТ»" />
