@@ -400,7 +400,7 @@
   background: url('../images/bg-order.jpg') repeat 50% 50%;
   background-attachment: fixed;
   background-size: cover;
-  padding-top: 65px;
+  padding-top: 61px;
   padding-bottom: 35px;
 }
 
@@ -413,19 +413,19 @@
   background-color: rgba(187, 192, 195, 0.38);
   position: absolute;
   right: -139px;
-  top: -63px;
+  top: -124px;
   width: 124px;
-  height: 124px;  
+  height: 124px;
 }
 
 .landing-order__container::after {
   content: '';
   background-color: rgb(255, 36, 11);
   width: 16px;
-  height: 16px;  
+  height: 16px;
   position: absolute;
   right: -183px;
-  top: -117px;
+  top: -178px;
 }
 
 .landing-order__title {
@@ -449,7 +449,7 @@
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 28px;
+  margin-top: 26px;
 }
 
 .landing-order__form {
