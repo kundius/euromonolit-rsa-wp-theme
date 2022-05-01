@@ -105,3 +105,141 @@
     opacity: 1;
   }
 }
+
+.underground__social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.underground-groups {
+  display: flex;
+
+  @include below(sm) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.underground-groups a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+
+  @include below(lg) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include below(sm) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.underground-groups a img {
+  display: block;
+}
+
+.underground-groups__telegram {
+  background: #36acf2;
+}
+
+.underground-groups__vk {
+  background: #556b9a;
+}
+
+.underground-groups__ok {
+  background: #ee931d;
+}
+
+.underground-groups__rutube {
+  background: #14191f;
+}
+
+.underground {
+  background: #e2e5e6;
+}
+
+.underground__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.underground__about {
+
+}
+
+.underground-about {
+
+}
+
+.underground-about__logo {
+
+}
+
+.underground-about__rights {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.underground__contacts {
+
+}
+
+.underground-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.underground-contacts__address {
+
+}
+
+.underground-contacts__email {
+  font-size: 18px;
+  color: rgb(10, 110, 170);
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1.333;
+  border-bottom: 1px dotted currentColor;
+}
+
+.underground-contacts__phone svg {
+  fill: #5b5b5b;
+  display: block;
+
+  @include below(sm) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.underground-contacts__phone {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -0.005em;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  gap: 4px;
+  margin-bottom: 14px;
+
+  @include below(lg) {
+    font-size: 18px;
+  }
+
+  @include below(sm) {
+    font-size: 20px;
+    margin-bottom: 12px;
+
+    justify-content: center;
+  }
+}
