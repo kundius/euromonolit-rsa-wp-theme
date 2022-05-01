@@ -253,16 +253,15 @@
   position: relative;
   font-size: 26px;
   color: #000;
-  font-size: 30px;
   text-transform: uppercase;
-  margin-top: 40px;
+  margin-top: 43px;
 }
 
 .landing-catalog__subtitle::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
+  top: 7px;
   width: 16px;
   height: 16px;
   background: #ff240b;
@@ -289,13 +288,17 @@
 }
 
 .landing-catalog__products {
+  margin-top: 48px;
+}
+
+.landing-catalog__grid {
   display: flex;
   flex-wrap: wrap;
   margin-left: -10px;
   margin-top: -10px;
 }
 
-.landing-catalog__products-item {
+.landing-catalog__grid-cell {
   padding-left: 10px;
   padding-top: 10px;
   width: calc(100% / 3);

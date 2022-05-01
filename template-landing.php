@@ -164,28 +164,30 @@ $sticky_posts = new WP_Query([
 
           <?php if ($products->have_posts()): ?>
           <div class="landing-catalog__products">
-            <?php while ($products->have_posts()): ?>
-            <?php $products->the_post()?>
-            <div class="landing-catalog__products-item">
-              <article class="catalog-card">
-                <figure class="catalog-card__image">
-                  <img src="<?php the_post_thumbnail_url('theme-medium') ?>" alt="<?php the_title() ?>" />
-                </figure>
-                <div class="catalog-card__body">
-                  <h2 class="catalog-card__title">
-                    <?php echo (get_field('product_title-in-card') ?: get_the_title()) ?>
-                  </h2>
-                  <div class="catalog-card__more">
-                    <a href="<?php the_permalink() ?>" class="ui-button-more">
-                      Узнать больше
-                      <span class="ui-button-more__arrow"></span>
-                    </a>
+            <div class="landing-catalog__grid">
+              <?php while ($products->have_posts()): ?>
+              <?php $products->the_post()?>
+              <div class="landing-catalog__grid-cell">
+                <article class="catalog-card">
+                  <figure class="catalog-card__image">
+                    <img src="<?php the_post_thumbnail_url('theme-medium') ?>" alt="<?php the_title() ?>" />
+                  </figure>
+                  <div class="catalog-card__body">
+                    <h2 class="catalog-card__title">
+                      <?php echo (get_field('product_title-in-card') ?: get_the_title()) ?>
+                    </h2>
+                    <div class="catalog-card__more">
+                      <a href="<?php the_permalink() ?>" class="ui-button-more">
+                        Узнать больше
+                        <span class="ui-button-more__arrow"></span>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </div>
+              <?php endwhile?>
+              <?php wp_reset_postdata()?>
             </div>
-            <?php endwhile?>
-            <?php wp_reset_postdata()?>
           </div>
           <?php endif?>
 
