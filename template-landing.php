@@ -329,6 +329,8 @@ $sticky_posts = new WP_Query([
         </div>
       </section>
 
+      <?php get_template_part('partials/section-how-we-work') ?>
+
       <div class="ui-content">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <?php the_content() ?>
