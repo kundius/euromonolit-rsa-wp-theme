@@ -22,6 +22,16 @@
   position: relative;
 }
 
+.how-we-work__item::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #c2c2c3;
+  left: calc(50% + 20px);
+  top: 20px;
+  left: 0;
+}
+
 .how-we-work__item::before {
   content: '';
   position: absolute;
@@ -29,6 +39,7 @@
   background: #c2c2c3;
   left: calc(50% + 20px);
   top: 20px;
+  right: 0;
 }
 
 .how-we-work__item-number {
