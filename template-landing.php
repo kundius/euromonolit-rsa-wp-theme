@@ -318,8 +318,7 @@ $sticky_posts = new WP_Query([
                     <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                   </div>
                   <div class="articles-item__desc">
-                    <?php echo strip_tags(get_the_excerpt()) ?>
-                    <a href="<?php the_permalink() ?>">...</a>
+                    <?php echo trim(strip_tags(get_the_excerpt())) ?><a href="<?php the_permalink() ?>">...</a>
                   </div>
                 </article>
               </div>
