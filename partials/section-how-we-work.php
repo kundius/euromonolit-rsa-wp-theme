@@ -12,7 +12,7 @@
         </div>
         <div class="how-we-work__item-arrow"></div>
         <div class="how-we-work__item-icon">
-          <img src="<?php echo $item['icon'] ?>" />
+          <img src="<?php echo $item['icon']['url'] ?>" />
         </div>
         <div class="how-we-work__item-name">
           <?php echo $item['name'] ?>
