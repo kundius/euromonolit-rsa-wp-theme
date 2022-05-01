@@ -661,6 +661,14 @@
   align-items: flex-start;
 }
 
+.repair-include__gap-1 {
+  width: 100px;
+}
+
+.repair-include__gap-2 {
+  width: 100px;
+}
+
 .repair-include__layout {
   display: flex;
 }
@@ -685,10 +693,11 @@
   justify-content: center;
   width: 371px;
   height: 189px;
+  flex-shrink: 0;
 }
 
 .repair-include__list {
-
+  width: 640px;
 }
 
 .repair-include__item {
@@ -707,6 +716,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .repair-include__item-name {

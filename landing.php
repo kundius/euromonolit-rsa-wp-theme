@@ -269,13 +269,15 @@ $products = new WP_Query([
             </div>
             <div class="landing-about-layout__include">
               <div class="repair-include">
-                <div class="repair-include__layout">
-                  <div class="repair-include__layout-title">
+                <div class="repair-include__gap-1"></div>
+                <!-- <div class="repair-include__layout"> -->
+                  <!-- <div class="repair-include__layout-title"> -->
                     <div class="repair-include__title">
                       <span><?php echo $landing_about['include']['title'] ?></span>
                     </div>
-                  </div>
-                  <div class="repair-include__layout-list">
+                <div class="repair-include__gap-2"></div>
+                  <!-- </div> -->
+                  <!-- <div class="repair-include__layout-list"> -->
                     <div class="repair-include__list">
                       <?php foreach ($landing_about['include']['items'] as $item): ?>
                       <div class="repair-include__item">
@@ -288,8 +290,8 @@ $products = new WP_Query([
                       </div>
                       <?php endforeach ?>
                     </div>
-                  </div>
-                </div>
+                  <!-- </div> -->
+                <!-- </div> -->
               </div>
             </div>
           </div>
