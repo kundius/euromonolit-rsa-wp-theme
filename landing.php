@@ -34,31 +34,31 @@ $products = new WP_Query([
               </div>
             </div>
             <div class="intro-layout__form">
-              <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="intro-form js-form">
-                <div class="intro-form__title">
+              <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="landing-order-form js-form">
+                <div class="landing-order-form__title">
                   Заказать обратный<br />
                   звонок
                 </div>
 
-                <div class="intro-form__subtitle">
+                <div class="landing-order-form__subtitle">
                   и получите бесплатную консультацию
                 </div>
 
-                <div class="intro-form__row">
+                <div class="landing-order-form__row">
                   <input type="text" name="your-name" class="ui-input" placeholder="Имя:" />
                 </div>
 
-                <div class="intro-form__row">
+                <div class="landing-order-form__row">
                   <span class="wpcf7-form-control-wrap your-phone">
                     <input type="tel" name="your-phone" value="" class="ui-input" placeholder="Телефон*">
                   </span>
                 </div>
 
-                <div class="intro-form__row">
+                <div class="landing-order-form__row">
                   <textarea rows="4" name="your-message" class="ui-textarea" placeholder="Дополнительная информация:"></textarea>
                 </div>
 
-                <div class="intro-form__rules">
+                <div class="landing-order-form__rules">
                   <span class="wpcf7-form-acceptance-wrap">
                     <label class="ui-rules">
                       <input type="checkbox" name="rules" value="1" class="form-checkbox">
@@ -68,48 +68,48 @@ $products = new WP_Query([
                   </span>
                 </div>
 
-                <div class="intro-form__submit">
+                <div class="landing-order-form__submit">
                   <button type="submit" class="ui-button-submit ui-button-submit_glare">
-                    <span class="ui-loader-square intro-form__loader"></span>
+                    <span class="ui-loader-square landing-order-form__loader"></span>
                     Отправить
                   </button>
                 </div>
 
-                <div class="intro-form__success">
-                  <div class="intro-form-result intro-form-result_success">
-                    <div class="intro-form-result__head">
-                      <div class="intro-form-result__head-icon"></div>
-                      <div class="intro-form-result__head-title">
+                <div class="landing-order-form__success">
+                  <div class="landing-order-form-result landing-order-form-result_success">
+                    <div class="landing-order-form-result__head">
+                      <div class="landing-order-form-result__head-icon"></div>
+                      <div class="landing-order-form-result__head-title">
                         Ваше сообщение
                         успешно отправлено
                       </div>
                     </div>
-                    <div class="intro-form-result__body">
-                      <div class="intro-form-result__body-text">
+                    <div class="landing-order-form-result__body">
+                      <div class="landing-order-form-result__body-text">
                         В ближайшее время<br />
                         мы свяжемся с вами.
                       </div>
-                      <div class="intro-form-result__body-close wpcf7-form-status-reset">
+                      <div class="landing-order-form-result__body-close wpcf7-form-status-reset">
                         Закрыть окно
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="intro-form__failed">
-                  <div class="intro-form-result intro-form-result_failed">
-                    <div class="intro-form-result__head">
-                      <div class="intro-form-result__head-icon"></div>
-                      <div class="intro-form-result__head-title">
+                <div class="landing-order-form__failed">
+                  <div class="landing-order-form-result landing-order-form-result_failed">
+                    <div class="landing-order-form-result__head">
+                      <div class="landing-order-form-result__head-icon"></div>
+                      <div class="landing-order-form-result__head-title">
                         Возникла ошибка
                       </div>
                     </div>
-                    <div class="intro-form-result__body">
-                      <div class="intro-form-result__body-text">
+                    <div class="landing-order-form-result__body">
+                      <div class="landing-order-form-result__body-text">
                         Не удалось<br />
                         отправить сообщение
                       </div>
-                      <div class="intro-form-result__body-close wpcf7-form-status-reset">
+                      <div class="landing-order-form-result__body-close wpcf7-form-status-reset">
                         Закрыть окно
                       </div>
                     </div>
@@ -180,6 +180,88 @@ $products = new WP_Query([
           </div>
           <?php endif?>
 
+        </div>
+      </section>
+
+      <section class="landing-order">
+        <div class="ui-container">
+          <div class="landing-order__title">
+            Готовы <span>заказать</span> ремонт?
+          </div>
+          <div class="landing-order__description">
+            У нас Вы можете заказать ремонт опалубки и быть уверены, что результат превзойдёт все ожидания. Мы гарантируем качественный и&nbsp;надежный ремонт оборудования, которое будет служить для проведения строительных работ намного дольше.
+          </div>
+          <div class="landing-order__form">
+            <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="landing-order-form js-form">
+              <div class="landing-order-form__field">
+                <input type="text" name="your-name" class="ui-input ui-input_flat" placeholder="Имя:" />
+              </div>
+
+              <div class="landing-order-form__field">
+                <span class="wpcf7-form-control-wrap your-phone">
+                  <input type="tel" name="your-phone" value="" class="ui-input ui-input_flat" placeholder="Телефон*">
+                </span>
+              </div>
+
+              <div class="landing-order-form__submit">
+                <button type="submit" class="ui-button-submit ui-button-submit_glare">
+                  <span class="ui-loader-square landing-order-form__loader"></span>
+                  Отправить
+                </button>
+              </div>
+
+              <div class="landing-order-form__rules">
+                <span class="wpcf7-form-acceptance-wrap">
+                  <label class="ui-rules">
+                    <input type="checkbox" name="rules" value="1" class="form-checkbox">
+                    <span></span>
+                    Прочитал(-а) <a href="<?php the_permalink(49) ?>" target="_blank">Пользовательское соглашение</a> и&nbsp;соглашаюсь с&nbsp;<a href="<?php the_permalink(3) ?>" target="_blank">Политикой конфиденциальности</a>
+                  </label>
+                </span>
+              </div>
+
+              <div class="landing-order-form__success">
+                <div class="landing-order-form-result landing-order-form-result_success">
+                  <div class="landing-order-form-result__head">
+                    <div class="landing-order-form-result__head-icon"></div>
+                    <div class="landing-order-form-result__head-title">
+                      Ваше сообщение
+                      успешно отправлено
+                    </div>
+                  </div>
+                  <div class="landing-order-form-result__body">
+                    <div class="landing-order-form-result__body-text">
+                      В ближайшее время<br />
+                      мы свяжемся с вами.
+                    </div>
+                    <div class="landing-order-form-result__body-close wpcf7-form-status-reset">
+                      Закрыть окно
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="landing-order-form__failed">
+                <div class="landing-order-form-result landing-order-form-result_failed">
+                  <div class="landing-order-form-result__head">
+                    <div class="landing-order-form-result__head-icon"></div>
+                    <div class="landing-order-form-result__head-title">
+                      Возникла ошибка
+                    </div>
+                  </div>
+                  <div class="landing-order-form-result__body">
+                    <div class="landing-order-form-result__body-text">
+                      Не удалось<br />
+                      отправить сообщение
+                    </div>
+                    <div class="landing-order-form-result__body-close wpcf7-form-status-reset">
+                      Закрыть окно
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 
