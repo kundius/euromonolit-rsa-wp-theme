@@ -220,44 +220,27 @@ $products = new WP_Query([
                 </span>
               </div>
 
-              <div class="landing-order-form__success">
-                <div class="landing-order-form-result landing-order-form-result_success">
-                  <div class="landing-order-form-result__head">
-                    <div class="landing-order-form-result__head-icon"></div>
-                    <div class="landing-order-form-result__head-title">
-                      Ваше сообщение
-                      успешно отправлено
-                    </div>
-                  </div>
-                  <div class="landing-order-form-result__body">
-                    <div class="landing-order-form-result__body-text">
-                      В ближайшее время<br />
-                      мы свяжемся с вами.
-                    </div>
-                    <div class="landing-order-form-result__body-close wpcf7-form-status-reset">
-                      Закрыть окно
-                    </div>
-                  </div>
+              <div class="landing-order-form-result landing-order-form-result_success">
+                <div class="landing-order-form-result__title">
+                  Ваше сообщение успешно отправлено
+                </div>
+                <div class="landing-order-form-result__desc">
+                  В ближайшее время мы свяжемся с вами.
+                </div>
+                <div class="landing-order-form-result__close wpcf7-form-status-reset">
+                  Закрыть окно
                 </div>
               </div>
 
-              <div class="landing-order-form__failed">
-                <div class="landing-order-form-result landing-order-form-result_failed">
-                  <div class="landing-order-form-result__head">
-                    <div class="landing-order-form-result__head-icon"></div>
-                    <div class="landing-order-form-result__head-title">
-                      Возникла ошибка
-                    </div>
-                  </div>
-                  <div class="landing-order-form-result__body">
-                    <div class="landing-order-form-result__body-text">
-                      Не удалось<br />
-                      отправить сообщение
-                    </div>
-                    <div class="landing-order-form-result__body-close wpcf7-form-status-reset">
-                      Закрыть окно
-                    </div>
-                  </div>
+              <div class="landing-order-form-result landing-order-form-result_failed">
+                <div class="landing-order-form-result__title">
+                  Ваше сообщение успешно отправлено
+                </div>
+                <div class="landing-order-form-result__desc">
+                  В ближайшее время мы свяжемся с вами.
+                </div>
+                <div class="landing-order-form-result__close wpcf7-form-status-reset">
+                  Закрыть окно
                 </div>
               </div>
             </form>
