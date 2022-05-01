@@ -333,6 +333,77 @@ $sticky_posts = new WP_Query([
 
       <?php get_template_part('partials/section-how-we-work') ?>
 
+      <section class="section-ask">
+        <div class="ui-container">
+          <div class="section-ask__layout">
+            <div class="section-ask__layout-before">
+
+            </div>
+            <div class="section-ask__layout-body">
+              <div class="section-ask__title">
+                Есть вопросы по ремонту опалубки, выбору комплектующих  или работе с нами?
+              </div>
+
+              <div class="section-ask__desc">
+                Заполните форму,<br />
+                и мы ответим в течение 5 мин
+              </div>
+
+              <div class="section-ask__form">
+                <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="ask-form js-form">
+                  <div class="ask-form__row">
+                    <input type="text" name="your-name" class="ui-input" placeholder="Имя:" />
+                  </div>
+
+                  <div class="ask-form__row">
+                    <span class="wpcf7-form-control-wrap your-phone">
+                      <input type="tel" name="your-phone" value="" class="ui-input" placeholder="Телефон*">
+                    </span>
+                  </div>
+
+                  <div class="ask-form__submit">
+                    <button type="submit" class="ui-button-submit ui-button-submit_glare">
+                      <span class="ui-loader-square ask-form__loader"></span>
+                      Отправить вопрос
+                    </button>
+                  </div>
+
+                  <div class="ask-form__rules">
+                    <span class="wpcf7-form-acceptance-wrap">
+                      <label class="ui-rules">
+                        <input type="checkbox" name="rules" value="1" class="form-checkbox">
+                        <span></span>
+                        <span>Прочитал(-а) <a href="<?php the_permalink(49) ?>" target="_blank">Пользовательское соглашение</a> и&nbsp;соглашаюсь с&nbsp;<a href="<?php the_permalink(3) ?>" target="_blank">Политикой конфиденциальности</a></span>
+                      </label>
+                    </span>
+                  </div>
+
+                  <div class="ask-form-result ask-form-result_success">
+                    <div class="ask-form-result__title">
+                      Ваше сообщение успешно отправлено
+                    </div>
+                    <div class="ask-form-result__desc">
+                      В ближайшее время мы свяжемся с вами.
+                    </div>
+                    <button class="ask-form-result__close wpcf7-form-status-reset"></button>
+                  </div>
+
+                  <div class="ask-form-result ask-form-result_failed">
+                    <div class="ask-form-result__title">
+                      Ваше сообщение успешно отправлено
+                    </div>
+                    <div class="ask-form-result__desc">
+                      В ближайшее время мы свяжемся с вами.
+                    </div>
+                    <button class="ask-form-result__close wpcf7-form-status-reset"></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="ui-content">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <?php the_content() ?>

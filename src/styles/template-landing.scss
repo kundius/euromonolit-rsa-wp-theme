@@ -493,6 +493,10 @@
 
 .landing-order-form__loader {
   display: none;
+
+  ._mail-sending & {
+    display: block;
+  }
 }
 
 .landing-order-form-result {
