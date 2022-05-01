@@ -244,6 +244,52 @@ $products = new WP_Query([
         </div>
       </section>
 
+      <?php $landing_about = get_field('landing_about') ?>
+      <section class="landing-about">
+        <div class="ui-container">
+          <div class="landing-about-layout">
+            <?php if (!empty($landing_about['image'])): ?>
+            <div class="landing-about-layout__image">
+              <figure class="landing-about__image">
+                <img src="<?php echo $landing_about['image']['url'] ?>" alt="<?php echo $landing_about['image']['title'] ?>" />
+              </figure>
+            </div>
+            <?php endif ?>
+            <div class="landing-about-layout__content">
+              <?php if (!empty($landing_about['title'])): ?>
+              <h2 class="landing-about__title">
+                <?php echo $landing_about['title'] ?>
+              </h2>
+              <?php endif ?>
+              <?php if (!empty($landing_about['content'])): ?>
+              <div class="landing-about__content">
+                <?php echo $landing_about['content'] ?>
+              </div>
+              <?php endif ?>
+            </div>
+            <div class="landing-about-layout__include">
+              <div class="repair-include">
+                <div class="repair-include__title">
+                  <?php echo $landing_about['include']['title'] ?>
+                </div>
+                <div class="repair-include__list">
+                  <?php foreach ($landing_about['include']['items'] as $item): ?>
+                  <div class="repair-include__item">
+                    <div class="repair-include__item-icon">
+                      <img src="<?php echo $item['icon']['url'] ?>" alt="<?php echo $item['icon']['title'] ?>" />
+                    </div>
+                    <div class="repair-include__item-name">
+                      <?php echo $item['name'] ?>
+                    </div>
+                  </div>
+                  <?php endforeach ?>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="ui-content">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <?php the_content() ?>
