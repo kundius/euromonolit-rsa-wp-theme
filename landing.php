@@ -184,7 +184,7 @@ $products = new WP_Query([
       </section>
 
       <section class="landing-order">
-        <div class="ui-container">
+        <div class="ui-container landing-order__container">
           <div class="landing-order__title">
             Готовы <span>заказать</span> ремонт?
           </div>
@@ -227,9 +227,7 @@ $products = new WP_Query([
                 <div class="landing-order-form-result__desc">
                   В ближайшее время мы свяжемся с вами.
                 </div>
-                <div class="landing-order-form-result__close wpcf7-form-status-reset">
-                  Закрыть окно
-                </div>
+                <button class="landing-order-form-result__close wpcf7-form-status-reset"></button>
               </div>
 
               <div class="landing-order-form-result landing-order-form-result_failed">
@@ -239,9 +237,7 @@ $products = new WP_Query([
                 <div class="landing-order-form-result__desc">
                   В ближайшее время мы свяжемся с вами.
                 </div>
-                <div class="landing-order-form-result__close wpcf7-form-status-reset">
-                  Закрыть окно
-                </div>
+                <button class="landing-order-form-result__close wpcf7-form-status-reset"></button>
               </div>
             </form>
           </div>
