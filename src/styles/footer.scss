@@ -166,15 +166,12 @@
 
 .underground {
   background: #e2e5e6;
+  padding: 30px 0;
 }
 
 .underground__container {
   display: flex;
   justify-content: space-between;
-}
-
-.underground__about {
-
 }
 
 .underground-about {
@@ -193,10 +190,6 @@
   letter-spacing: 0.350em;
 }
 
-.underground__contacts {
-
-}
-
 .underground-contacts {
   display: flex;
   flex-direction: column;
@@ -204,7 +197,9 @@
 }
 
 .underground-contacts__address {
-  
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .underground-contacts__email {
@@ -214,6 +209,7 @@
   font-weight: bold;
   line-height: 1.333;
   border-bottom: 1px dotted currentColor;
+  margin-top: 23px;
 }
 
 .underground-contacts__phone svg {
@@ -235,7 +231,7 @@
   display: flex;
   text-decoration: none;
   gap: 4px;
-  margin-bottom: 14px;
+  margin-bottom: 19px;
 
   @include below(lg) {
     font-size: 18px;
