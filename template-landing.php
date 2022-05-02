@@ -403,6 +403,10 @@ $sticky_posts = new WP_Query([
           </div>
         </div>
       </section>
+
+      <section class="section-map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A249b83f8ce4a90a15c143edd197ec63d81732c5d20badd76d12b12885fe63f4b&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+      </section>
       
       <?php get_template_part('partials/footer') ?>
     </div>
