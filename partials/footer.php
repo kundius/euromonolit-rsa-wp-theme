@@ -17,7 +17,7 @@
         <?php the_field('theme_phone', 'options') ?>
       </a>
       <div class="underground-contacts__address">
-        <?php the_field('theme_address', 'options') ?>
+        <?php the_field('theme_footer-address', 'options') ?>
       </div>
       <a href="mailto:<?php the_field('theme_email', 'options') ?>" class="underground-contacts__email">
         <?php the_field('theme_email', 'options') ?>
