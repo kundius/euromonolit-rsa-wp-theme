@@ -404,6 +404,10 @@
   transition: .5s ease;
   transition-property: transform, color;
   will-change: transform, color;
+
+  @include below(lg) {
+    font-size: 18px;
+  }
 }
 
 .catalog-card__title span {
