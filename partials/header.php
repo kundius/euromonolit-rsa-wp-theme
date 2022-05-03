@@ -46,7 +46,7 @@
             <a href="tel:<?php the_field('theme_phone', 'options') ?>" class="header-contacts__phone"><?php the_field('theme_phone', 'options') ?></a>
             <a href="mailto:<?php the_field('theme_email', 'options') ?>" class="header-contacts__email"><?php the_field('theme_email', 'options') ?></a>
           </div>
-          <button class="header-contacts__callback"></button>
+          <button class="header-contacts__callback" data-hystmodal="#modal-callback"></button>
         </div>
       </div>
     </div>
