@@ -232,9 +232,9 @@
     order: -1;
   }
 
-  @include below(md) {
+  @include below(sm) {
     margin: 0 auto;
-    width: 186px;
+    width: 180px;
     order: initial;
     background: transparent;
   }
