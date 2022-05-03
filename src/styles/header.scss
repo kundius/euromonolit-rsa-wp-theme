@@ -252,7 +252,7 @@
 .header-logo__desktop {
   display: none;
 
-  @include above(md) {
+  @include above(sm) {
     display: block;
   }
 }
@@ -260,7 +260,7 @@
 .header-logo__mobile {
   display: none;
 
-  @include below(md) {
+  @include below(sm) {
     display: block;
   }
 }
