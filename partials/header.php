@@ -17,6 +17,7 @@
           <span></span>
           <span></span>
           <span></span>
+          <span>Меню</span>
         </button>
 
         <a href="/" class="header-logo">
