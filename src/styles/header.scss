@@ -135,6 +135,10 @@
   @include below(md) {
     height: 64px;
   }
+
+  @include below(sm) {
+    height: 60px;
+  }
 }
 
 .header__toggle {
@@ -199,7 +203,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 56px;
+
+  @include above(sm) {
+    min-height: 56px;
+  }
 }
 
 .header-logo {
