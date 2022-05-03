@@ -176,7 +176,7 @@
     font-size: 20px;
     letter-spacing: -.02em;
     top: 50%;
-    left: 32px;
+    left: 42px;
     transform: translateY(-50%);
     position: absolute;
   }
@@ -309,6 +309,10 @@
 
   @include below(lg) {
     width: 200px;
+  }
+
+  @include below(md) {
+    margin-left: auto;
   }
 }
 
