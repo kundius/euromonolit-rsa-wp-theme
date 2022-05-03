@@ -40,6 +40,11 @@ $sticky_posts = new WP_Query([
                   <span>Качественная опалубка ведущих европейских<br />
                   и российских производителей со склада в Санкт-Петербурге</span>
                 </div>
+                <div class="intro-content__button">
+                  <button type="submit" class="ui-button-secondary" data-hystmodal="#modal-feedback">
+                    Отправить заявку
+                  </button>
+                </div>
               </div>
             </div>
             <div class="intro-layout__form">

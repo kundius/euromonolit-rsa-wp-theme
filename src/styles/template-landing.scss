@@ -80,6 +80,13 @@
   }
 }
 
+.intro-content__button {
+
+  @include above(sm) {
+    display: none;
+  }
+}
+
 .intro-content__desc {
   font-size: 28px;
   line-height: 30px;
