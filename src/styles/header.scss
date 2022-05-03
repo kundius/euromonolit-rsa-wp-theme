@@ -138,11 +138,10 @@
 }
 
 .header__toggle {
-  width: 36px;
-  height: 36px;
   position: relative;
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
   padding: 0;
   border: none;
   background: transparent;
@@ -187,6 +186,13 @@
   @include above(md) {
     display: none;
   }
+
+  @include below(sm) {
+
+    span:nth-child(4) {
+      display: none;
+    }
+  }
 }
 
 .header-second__container {
@@ -225,6 +231,16 @@
     margin-left: 0;
     order: -1;
   }
+
+  @include below(md) {
+    margin: 0 auto;
+    width: 160px;
+    order: initial;
+  }
+}
+
+.header-logo a {
+  display: block;
 }
 
 .header_fixed .header-logo {
@@ -235,6 +251,30 @@
     padding-top: 5px;
     margin-top: -5px;
   }
+}
+
+.header-logo__desktop {
+  display: none;
+
+  @include above(md) {
+    display: block;
+  }
+}
+
+.header-logo__mobile {
+  display: none;
+
+  @include below(md) {
+    display: block;
+  }
+}
+
+.header-logo__phone {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
 }
 
 .header-logo__image {
@@ -320,6 +360,11 @@
   @include below(md) {
     margin-left: auto;
   }
+
+  @include below(sm) {
+    margin-left: initial;
+    width: auto;
+  }
 }
 
 .header-contacts__group {
@@ -327,6 +372,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 8px;
+
+  @include below(lg) {
+    margin-right: 6px;
+  }
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .header-contacts__phone {
@@ -363,7 +417,6 @@
   height: 56px;
   flex-shrink: 0;
   background-image: linear-gradient( 35deg, #c32613 0%, #e04925 50%, #c32613 100%);
-  margin-left: 8px;
   border: none;
   padding: 0;
   position: relative;
@@ -371,7 +424,6 @@
   @include below(lg) {
     width: 48px;
     height: 48px;
-    margin-left: 6px;
   }
 }
 

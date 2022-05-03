@@ -20,10 +20,20 @@
           <span>Меню</span>
         </button>
 
-        <a href="/" class="header-logo">
-          <img src="<?php bloginfo('template_url') ?>/dist/images/logo.png" alt="<?php bloginfo('name') ?>" class="header-logo__image" />
-          <span class="header-logo__desc">ремонт    строительство    аренда</span>
-        </a>
+        <div class="header-logo">
+          <div class="header-logo__desktop">
+            <a href="/">
+              <img src="<?php bloginfo('template_url') ?>/dist/images/logo.png" alt="<?php bloginfo('name') ?>" class="header-logo__image" />
+            </a>
+            <span class="header-logo__desc">ремонт    строительство    аренда</span>
+          </div>
+          <div class="header-logo__mobile">
+            <a href="/">
+              <img src="<?php bloginfo('template_url') ?>/dist/images/footer-logo.png" alt="<?php bloginfo('name') ?>" class="header-logo__image" />
+            </a>
+            <a href="tel:<?php the_field('theme_phone', 'options') ?>" class="header-logo__phone"><?php the_field('theme_phone', 'options') ?></a>
+          </div>
+        </div>
 
         <?php wp_nav_menu([
           'container' => false,
