@@ -41,6 +41,11 @@
   padding: 0 4px;
   background: #fff;
   margin-left: -4px;
+
+  @include below(lg) {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 
 .intro-content__subtitle {
@@ -49,6 +54,11 @@
   color: #fff;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.44);
   margin-top: 18px;
+
+  @include below(lg) {
+    font-size: 36px;
+    width: 100%;
+  }
 }
 
 .intro-content__subtitle::after {
@@ -70,6 +80,10 @@
   line-height: 30px;
   color: #fff;
   margin-top: 38px;
+
+  @include below(lg) {
+    font-size: 26px;
+  }
 }
 
 .intro-content__desc span {
