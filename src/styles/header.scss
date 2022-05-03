@@ -234,7 +234,7 @@
 
   @include below(md) {
     margin: 0 auto;
-    width: 160px;
+    width: 186px;
     order: initial;
   }
 }
@@ -270,11 +270,12 @@
 }
 
 .header-logo__phone {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   color: #000;
   text-align: center;
+  margin-top: 4px;
 }
 
 .header-logo__image {
