@@ -3,6 +3,11 @@
   padding-bottom: 65px;
   background: url('../images/intro.jpg') no-repeat 50% 50%;
   background-size: cover;
+
+  @include below(lg) {
+    padding-top: 147px;
+    padding-bottom: 45px;
+  }
 }
 
 .intro-layout {
@@ -100,6 +105,7 @@
     padding-top: 25px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 25px;
   }
 }
 
