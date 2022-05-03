@@ -29,6 +29,10 @@
     margin-left: 40px;
     width: 340px;
   }
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .intro-content {
@@ -81,6 +85,9 @@
 }
 
 .intro-content__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
 
   @include above(sm) {
     display: none;
