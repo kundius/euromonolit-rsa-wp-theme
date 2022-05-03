@@ -5,7 +5,7 @@
         <?php the_field('theme_address', 'options') ?>
       </div>
       <button class="header-feedback" data-hystmodal="#feedback">
-        Задать вопрос специалисту
+        Задать вопрос<span> специалисту</span>
       </button>
     </div>
   </div>
