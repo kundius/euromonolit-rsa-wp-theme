@@ -285,6 +285,10 @@
   display: block;
   max-width: calc(100% - 12px);
   margin: 0 auto;
+
+  @include below(sm) {
+    width: 100%;
+  }
 }
 
 .header-logo__desc {
