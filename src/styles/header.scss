@@ -122,8 +122,11 @@
 }
 
 .header_fixed .header-second {
-  padding-bottom: 5px;
-  padding-top: 5px;
+
+  @include above(md) {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
 }
 
 .header-placeholder {
@@ -225,10 +228,13 @@
 }
 
 .header_fixed .header-logo {
-  padding-bottom: 5px;
-  margin-bottom: -5px;
-  padding-top: 5px;
-  margin-top: -5px;
+
+  @include above(md) {
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+    padding-top: 5px;
+    margin-top: -5px;
+  }
 }
 
 .header-logo__image {
