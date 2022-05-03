@@ -13,6 +13,12 @@
   <div class="header-second-wrapper">
     <div class="header-second">
       <div class="ui-container ui-container_large header-second__container">
+        <button class="header__toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <a href="/" class="header-logo">
           <img src="<?php bloginfo('template_url') ?>/dist/images/logo.png" alt="<?php bloginfo('name') ?>" class="header-logo__image" />
           <span class="header-logo__desc">ремонт    строительство    аренда</span>
