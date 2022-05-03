@@ -129,7 +129,7 @@
             </svg>
           </div>
           <div class="drawer-addess__item-body">
-            <div class="drawer-addess__item-title">Офис:</div>
+            <div class="drawer-addess__item-title">Адрес:</div>
             <div class="drawer-addess__item-content">
               <?php the_field('theme_address', 'options') ?>
             </div>
