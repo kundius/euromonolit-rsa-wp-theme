@@ -1,6 +1,11 @@
 .section-articles {
   padding-top: 93px;
   padding-bottom: 85px;
+
+  @include below(sm) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .section-articles__container {
@@ -35,6 +40,11 @@
     margin-bottom: 30px;
     text-transform: uppercase;
   }
+
+  @include below(sm) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .section-articles__title::before {
@@ -65,7 +75,11 @@
 
 .section-articles__grid-cell {
   width: calc(100% / 3);
-  padding-left: 30px
+  padding-left: 30px;
+
+  @include below(sm) {
+    width: 100%;
+  }
 }
 
 .articles-item {

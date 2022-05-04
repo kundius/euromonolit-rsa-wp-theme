@@ -877,6 +877,11 @@
     margin-bottom: 30px;
     text-transform: uppercase;
   }
+
+  @include below(sm) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .repair-include__list {
@@ -913,4 +918,8 @@
   font-weight: bold;
   color: #000;
   letter-spacing: -0.005em;
+
+  @include below(sm) {
+    font-size: 20px;
+  }
 }
