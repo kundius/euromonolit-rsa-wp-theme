@@ -25,13 +25,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 12px;
 }
 
 .footer__links-item {
-  margin: 8px 25px;
+  margin: 4px 24px;
 
   @include below(lg) {
-    margin: 4px 12px;
+    margin: 2px 12px;
   }
 }
 
