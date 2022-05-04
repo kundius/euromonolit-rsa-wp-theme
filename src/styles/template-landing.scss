@@ -317,6 +317,7 @@
 
   @include below(sm) {
     padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -396,6 +397,10 @@
 
 .landing-catalog__products {
   margin-top: 48px;
+
+  @include below(sm) {
+    margin-top: 30px;
+  }
 }
 
 .landing-catalog__grid {
@@ -409,6 +414,10 @@
   padding-left: 10px;
   padding-top: 10px;
   width: calc(100% / 3);
+
+  @include below(sm) {
+    width: 100%;
+  }
 }
 
 .catalog-card {
