@@ -112,7 +112,7 @@
   justify-content: center;
   margin-top: 42px;
 
-  @include above(sm) {
+  @include above(md) {
     display: none;
   }
 
