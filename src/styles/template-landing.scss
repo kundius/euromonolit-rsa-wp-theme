@@ -406,6 +406,7 @@
 .landing-catalog__grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: -10px;
   margin-top: -10px;
 }
@@ -780,6 +781,10 @@
 
 .landing-about__include {
   margin-top: 118px;
+
+  @include below(md) {
+    margin-top: 80px;
+  }
 }
 
 .landing-about__image {
@@ -870,6 +875,7 @@
     color: #d2381c;
     width: 100%;
     margin-bottom: 30px;
+    text-transform: uppercase;
   }
 }
 
