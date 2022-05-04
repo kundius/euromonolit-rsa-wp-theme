@@ -314,6 +314,10 @@
 .landing-catalog {
   padding-top: 55px;
   padding-bottom: 101px;
+
+  @include below(sm) {
+    padding-top: 40px;
+  }
 }
 
 .landing-catalog__title {
@@ -322,6 +326,11 @@
   color: #000;
   max-width: 580px;
   font-weight: bold;
+
+  @include below(sm) {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 .landing-catalog__subtitle {
@@ -331,6 +340,12 @@
   color: #000;
   text-transform: uppercase;
   margin-top: 43px;
+
+  @include below(sm) {
+    font-size: 22px;
+    margin-top: 30px;
+    padding-left: 30px;
+  }
 }
 
 .landing-catalog__subtitle::before {
@@ -341,6 +356,10 @@
   width: 16px;
   height: 16px;
   background: #ff240b;
+
+  @include below(sm) {
+    top: 3px;
+  }
 }
 
 .landing-catalog__content {
@@ -351,16 +370,28 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -50px;
+
+  @include below(sm) {
+    margin-top: 30px;
+  }
 }
 
 .landing-catalog__content-left {
   padding-left: 50px;
   width: 50%;
+
+  @include below(sm) {
+    width: 100%;
+  }
 }
 
 .landing-catalog__content-right {
   padding-left: 50px;
   width: 50%;
+
+  @include below(sm) {
+    width: 100%;
+  }
 }
 
 .landing-catalog__products {
@@ -434,6 +465,10 @@
   flex-direction: column;
   align-items: center;
   padding: 32px 30px;
+
+  @include below(md) {
+    padding: 12px;
+  }
 }
 
 .catalog-card__title {
@@ -454,6 +489,8 @@
 
   @include below(lg) {
     font-size: 18px;
+    line-height: 22px;
+    height: 66px;
   }
 }
 
@@ -464,6 +501,13 @@
 .catalog-card:hover .catalog-card__title {
   color: #ff240b;
   transform: scale(1.05);
+}
+
+.catalog-card__more .ui-button-more {
+  @include below(md) {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 
 .catalog-card__more .ui-button-more::after {
