@@ -130,6 +130,11 @@
   align-items: flex-end;
   justify-content: space-between;
   margin-left: 20px;
+
+  @include below(sm) {
+    margin: 30px auto 0;
+    align-items: center;
+  }
 }
 
 .underground-groups {
@@ -192,10 +197,18 @@
 .underground__container {
   display: flex;
   justify-content: space-between;
+
+  @include below(sm) {
+    flex-wrap: wrap;
+  }
 }
 
 .underground-about {
   margin-right: 20px;
+
+  @include below(sm) {
+    margin: 0 auto 30px;
+  }
 }
 
 .underground-about__logo {
@@ -228,6 +241,11 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 380px;
+
+  @include below(sm) {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .underground-contacts__address {
@@ -274,7 +292,6 @@
   @include below(sm) {
     font-size: 20px;
     margin-bottom: 12px;
-
     justify-content: center;
   }
 }
