@@ -201,7 +201,7 @@
 .underground-about__logo {
   display: block;
 
-  @include below(sm) {
+  @include below(md) {
     width: 180px;
   }
 }
@@ -218,7 +218,7 @@
   text-align: left;
   letter-spacing: 0.350em;
 
-  @include below(sm) {
+  @include below(md) {
     letter-spacing: .12em;
   }
 }
