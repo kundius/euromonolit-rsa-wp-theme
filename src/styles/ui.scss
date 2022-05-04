@@ -151,13 +151,6 @@ body {
     font-size: 14px;
     height: 34px;
   }
-
-  &_flat {
-    height: 64px;
-    border-radius: 0;
-    border: none;
-    background: #fff;
-  }
 }
 
 .ui-input-flat {
@@ -175,6 +168,10 @@ body {
   ._error & {
     color: #e60f0f;
     background-color: #ffe5e5;
+  }
+
+  @include below(sm) {
+    height: 48px;
   }
 }
 

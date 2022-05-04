@@ -2,6 +2,11 @@
   padding-top: 36px;
   padding-bottom: 66px;
   background: #f9f9f9;
+
+  @include below(sm) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .how-we-work__title {
@@ -11,15 +16,36 @@
   font-size: 36px;
   line-height: 1;
   margin-bottom: 62px;
+
+  @include below(sm) {
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
 }
 
 .how-we-work__items {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .how-we-work__item {
   width: 20%;
   position: relative;
+
+  @include below(sm) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.how-we-work__item + .how-we-work__item {
+
+  @include below(sm) {
+    margin-top: 30px;
+  }
 }
 
 .how-we-work__item::after {
@@ -30,6 +56,10 @@
   right: calc(50% + 20px);
   top: 20px;
   left: 0;
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .how-we-work__item:first-child::after {
@@ -44,6 +74,10 @@
   left: calc(50% + 20px);
   top: 20px;
   right: 0;
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .how-we-work__item:last-child::before {
@@ -65,6 +99,10 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+
+  @include below(sm) {
+    margin: 0 20px 0 0;
+  }
 }
 
 .how-we-work__item-arrow {
@@ -77,6 +115,10 @@
   top: 17px;
   left: 100%;
   z-index: 2;
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .how-we-work__item:last-child .how-we-work__item-arrow {
@@ -92,6 +134,10 @@
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  @include below(sm) {
+    margin: 0;
+  }
 }
 
 .how-we-work__item-name {
@@ -104,4 +150,11 @@
   max-width: 168px;
   margin-left: auto;
   margin-right: auto;
+
+  @include below(sm) {
+    width: 100%;
+    max-width: initial;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
