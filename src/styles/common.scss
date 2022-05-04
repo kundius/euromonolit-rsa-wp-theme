@@ -5,7 +5,7 @@
   font-size: 14px;
 }
 
-.page-breadcrumbs > span {
+.page-breadcrumbs span[typeof="ListItem"] {
   margin-right: 12px;
 }
 
