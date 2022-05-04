@@ -41,7 +41,7 @@ $sticky_posts = new WP_Query([
                   и российских производителей со склада в Санкт-Петербурге</span>
                 </div>
                 <div class="intro-content__button">
-                  <button type="submit" class="ui-button-secondary" data-hystmodal="#modal-feedback">
+                  <button type="submit" class="ui-button-submit" data-hystmodal="#modal-feedback">
                     Отправить заявку
                   </button>
                 </div>
