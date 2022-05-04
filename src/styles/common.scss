@@ -14,3 +14,23 @@
   text-decoration: none;
   color: #6e726c;
 }
+
+.page-headline {
+
+}
+
+.page-headline__title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: bold;
+  margin: 0;
+
+  &_medium {
+    font-size: 36px;
+  }
+
+  &_small {
+    font-size: 24px;
+  }
+}
