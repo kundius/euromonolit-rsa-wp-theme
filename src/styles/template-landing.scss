@@ -24,7 +24,7 @@
   padding-bottom: 84px;
   flex-grow: 1;
 
-  @include below(sm) {
+  @include below(md) {
     padding-bottom: 0;
   }
 }
