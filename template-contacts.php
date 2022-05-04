@@ -76,7 +76,9 @@ Template Name: Контакты
                   </div>
                 </div>
               </div>
+            </div>
 
+            <div class="contacts-layout__form">
               <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="contacts-form js-form">
                 <div class="contacts-form__title">
                   Обратная связь
