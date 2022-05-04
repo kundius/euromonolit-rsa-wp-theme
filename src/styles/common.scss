@@ -21,10 +21,10 @@
 
 .page-headline__title {
   text-align: center;
-  font-size: 48px;
   line-height: 1;
   font-weight: bold;
   margin: 0;
+  font-size: 48px;
 
   &_medium {
     font-size: 36px;
@@ -32,5 +32,17 @@
 
   &_small {
     font-size: 24px;
+  }
+
+  @include below(sm) {
+    font-size: 36px;
+  
+    &_medium {
+      font-size: 32px;
+    }
+  
+    &_small {
+      font-size: 20px;
+    }
   }
 }
