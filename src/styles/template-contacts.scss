@@ -16,7 +16,7 @@
 
 .contacts-layout__main {
   margin-left: 100px;
-  width: 360px;
+  width: 365px;
 }
 
 .contacts-map {
@@ -70,6 +70,7 @@
 .contacts-data__group {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .contacts-data__group-left {
@@ -94,8 +95,9 @@
 .contacts-data__messenger-value {
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000;
+  margin-top: 9px;
 }
 
 .contacts-data__social {
@@ -112,6 +114,7 @@
 .contacts-data__social-value {
   display: flex;
   gap: 10px;
+  margin-top: 9px;
 }
 
 .contacts-data__social-telegram,
@@ -158,7 +161,7 @@
 }
 
 .contacts-data__address {
-
+  margin-top: 30px;
 }
 
 .contacts-data__address-label {
@@ -172,10 +175,12 @@
   font-size: 18px;
   line-height: 24px;
   color: #000;
+  margin-top: 3px;
 }
 
 .contacts-form {
   position: relative;
+  margin-top: 71px;
 }
 
 .contacts-form__title {
@@ -183,21 +188,22 @@
   font-size: 24px;
   color: #000;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .contacts-form__row + .contacts-form__row {
-  margin-top: 15px;
+  margin-top: 11px;
 }
 
 .contacts-form__submit {
-  margin-top: 16px;
+  margin-top: 34px;
   display: flex;
   justify-content: center;
 }
 
 .contacts-form__rules {
   color: #8b8b8b;
-  margin-top: 18px;
+  margin-top: 6px;
 }
 
 .contacts-form__loader {
