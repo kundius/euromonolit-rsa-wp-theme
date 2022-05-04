@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer__copyright {
@@ -25,7 +26,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 12px;
+
+  @include below(md) {
+    order: -1;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #575757;
+  }
 }
 
 .footer__links-item {
