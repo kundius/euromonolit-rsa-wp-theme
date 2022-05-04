@@ -191,14 +191,12 @@
 
 .contacts-form__submit {
   margin-top: 16px;
-}
-
-.contacts-form__submit .ui-button-submit {
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .contacts-form__rules {
-  color: #fff;
+  color: #8b8b8b;
   margin-top: 18px;
 }
 
