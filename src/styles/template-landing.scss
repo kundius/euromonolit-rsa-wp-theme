@@ -39,7 +39,7 @@
     width: 340px;
   }
 
-  @include below(sm) {
+  @include below(md) {
     display: none;
   }
 }
