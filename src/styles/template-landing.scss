@@ -595,6 +595,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
+
+  @include below(sm) {
+    width: 300px;
+  }
 }
 
 .landing-order-form {
@@ -734,6 +738,11 @@
   padding-top: 67px;
   padding-bottom: 100px;
   border-bottom: 1px solid #e5e5e5;
+
+  @include below(sm) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .landing-about__layout {
@@ -748,11 +757,20 @@
   display: flex;
   justify-content: center;
   width: 50%;
+
+  @include below(sm) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .landing-about__layout-content {
   padding-left: 40px;
   width: 50%;
+
+  @include below(sm) {
+    width: 100%;
+  }
 }
 
 .landing-about__include {
@@ -767,6 +785,7 @@
 
 .landing-about__image img {
   display: block;
+  max-width: 100%;
 }
 
 .landing-about__title {
@@ -776,6 +795,11 @@
   font-weight: bold;
   position: relative;
   margin: 0;
+
+  @include below(sm) {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 .landing-about__title::before {
