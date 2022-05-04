@@ -871,6 +871,10 @@
 .repair-include__list {
   width: 630px;
   flex-shrink: 1;
+  
+  @include below(md) {
+    width: 100%;
+  }
 }
 
 .repair-include__item {
