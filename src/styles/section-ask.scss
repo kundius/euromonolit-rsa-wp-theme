@@ -39,11 +39,27 @@
 .section-ask__layout-before {
   padding-left: 40px;
   width: 50%;
+
+  @include below(md) {
+    width: 10%;
+  }
+
+  @include below(sm) {
+    display: none;
+  }
 }
 
 .section-ask__layout-body {
   padding-left: 40px;
   width: 50%;
+
+  @include below(md) {
+    width: 80%;
+  }
+
+  @include below(sm) {
+    width: 100%;
+  }
 }
 
 .section-ask__title {
