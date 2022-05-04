@@ -24,13 +24,14 @@
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__links-item {
-  margin: 0 25px;
+  margin: 8px 25px;
 
   @include below(lg) {
-    margin: 0 10px;
+    margin: 4px 12px;
   }
 }
 
@@ -118,6 +119,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: space-between;
+  margin-left: 20px;
 }
 
 .underground-groups {
@@ -169,7 +172,7 @@
 }
 
 .underground-counters {
-  margin-top: 56px;
+  margin-top: 20px;
 }
 
 .underground {
@@ -183,11 +186,20 @@
 }
 
 .underground-about {
-
+  margin-right: 20px;
 }
 
 .underground-about__logo {
+  display: block;
 
+  @include below(sm) {
+    width: 180px;
+  }
+}
+
+.underground-about__logo img {
+  display: block;
+  max-width: 100%;
 }
 
 .underground-about__rights {
@@ -196,6 +208,10 @@
   line-height: 1.5;
   text-align: left;
   letter-spacing: 0.350em;
+
+  @include below(sm) {
+    letter-spacing: .12em;
+  }
 }
 
 .underground-contacts {
