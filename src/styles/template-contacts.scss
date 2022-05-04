@@ -99,23 +99,46 @@
 }
 
 .contacts-data__social-value {
-
+  display: flex;
+  gap: 10px;
 }
 
-.contacts-data__social-telegram {
-
-}
-
-.contacts-data__social-vk {
-
-}
-
-.contacts-data__social-ok {
-
-}
-
+.contacts-data__social-telegram,
+.contacts-data__social-vk,
+.contacts-data__social-ok,
 .contacts-data__social-rutube {
+  filter: brightness(0.5);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
+  &:hover {
+    filter: brightness(0);
+  }
+}
+
+.contacts-data__social-telegram:hover {
+  background: #36acf2;
+  border-color: #36acf2;
+}
+
+.contacts-data__social-vk:hover {
+  background: #556b9a;
+  border-color: #556b9a;
+}
+
+.contacts-data__social-ok:hover {
+  background: #ee931e;
+  border-color: #ee931e;
+}
+
+.contacts-data__social-rutube:hover {
+  background: #000000;
+  border-color: #000000;
 }
 
 .contacts-data__address {
