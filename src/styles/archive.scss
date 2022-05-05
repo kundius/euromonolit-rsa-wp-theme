@@ -103,13 +103,13 @@
   align-items: center;
   justify-content: center;
   padding: 20px 0;
-  border-top: 1px solid #e4e5ea;
-  margin-top: 20px;
+
   .nav-links {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .page-numbers {
     width: 32px;
     height: 32px;
@@ -124,20 +124,21 @@
     line-height: 1;
     border-radius: 50%;
   }
+
   .page-numbers:hover {
     background: #ababab;
     color: #fff;
   }
+
   .page-numbers.current {
-    width: 42px;
-    height: 42px;
     font-size: 24px;
-    color: #fff;
-    background: #2e82b9;
+    color: #d2381c;
     font-weight: bold;
   }
+
   .page-numbers.prev {
     position: relative;
+
     &::after {
       content: '';
       width: 8px;
@@ -149,6 +150,7 @@
       left: calc(50% - 4px);
       transform: translate(-50%,-50%) rotate(45deg);
     }
+
     &::before {
       content: '';
       height: 1px;
@@ -160,8 +162,10 @@
       background: currentColor;
     }
   }
+
   .page-numbers.next {
     position: relative;
+
     &::after {
       content: '';
       width: 8px;
@@ -173,6 +177,7 @@
       left: calc(50% + 4px);
       transform: translate(-50%,-50%) rotate(-45deg);
     }
+
     &::before {
       content: '';
       height: 1px;
