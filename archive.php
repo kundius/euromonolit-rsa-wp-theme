@@ -20,11 +20,11 @@ $category = get_queried_object();
 $query_params = [
   'post_type' => 'post',
   // 'posts_per_page' => 10,
-  'order' => 'DESC',
-  'orderby' => 'date',
+  // 'order' => 'DESC',
+  // 'orderby' => 'date',
   'paged' => get_query_var('paged') ?: 1,
   'tax_query' => [
-  'relation' => 'AND',
+    'relation' => 'AND',
     [
       'taxonomy' => $category->taxonomy,
       'field' => 'id',
