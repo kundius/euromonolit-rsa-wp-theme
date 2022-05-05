@@ -1,21 +1,38 @@
 <?php
 // $sticky = get_option('sticky_posts');
-
 $sticky_posts = new WP_Query([
-    'post_type' => 'post',
-    'order' => 'DESC',
-    'orderby' => 'date',
-    'cat' => get_queried_object_id(),
-    'posts_per_page' => 1,
-    'ignore_sticky_posts' => true,
-    // 'post__in' => $sticky,
-    'meta_query' => [
-        [
-            'key' => 'post_favorite',
-            'value' => 1,
-        ],
-    ],
+  'post_type' => 'post',
+  'order' => 'DESC',
+  'orderby' => 'date',
+  'cat' => get_queried_object_id(),
+  'posts_per_page' => 1,
+  'ignore_sticky_posts' => true,
+  // 'post__in' => $sticky,
+  'meta_query' => [
+      [
+          'key' => 'post_favorite',
+          'value' => 1,
+      ],
+  ],
 ]);
+
+$category = get_queried_object();
+$query_params = [
+  'post_type' => 'post',
+  // 'posts_per_page' => 10,
+  'order' => 'DESC',
+  'orderby' => 'date',
+  'paged' => get_query_var('paged') ?: 1,
+  'tax_query' => [
+  'relation' => 'AND',
+    [
+      'taxonomy' => $category->taxonomy,
+      'field' => 'id',
+      'terms' => [$category->term_id]
+    ]
+  ]
+];
+$articles = new WP_Query($query_params);
 ?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes() ?> itemscope itemtype="http://schema.org/WebSite">
@@ -53,10 +70,10 @@ $sticky_posts = new WP_Query([
           </article>
           <?php endwhile; wp_reset_postdata(); endif; ?>
           
-          <?php if (have_posts()): ?>
+          <?php if ($articles->have_posts()): ?>
           <div class="archive-grid js-magic-grid">
-            <?php while (have_posts()): ?>
-            <?php the_post() ?>
+            <?php while ($articles->have_posts()): ?>
+            <?php $articles->the_post() ?>
             <div class="archive-grid__cell">
               <article class="archive-card">
                 <figure class="archive-card__image">
@@ -79,7 +96,8 @@ $sticky_posts = new WP_Query([
             <?php wp_reset_postdata() ?>
           </div>
 
-          <?php the_posts_pagination(['prev_text' => '', 'next_text' => '']) ?>
+          <?php wp_pagenavi(['query' => $articles]) ?>
+          <?php //the_posts_pagination(['prev_text' => '', 'next_text' => '']) ?>
           <?php else: ?>
             <p>Извините, ничего не найдено.</p>
           <?php endif?>
