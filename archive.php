@@ -5,17 +5,18 @@ $sticky_posts = new WP_Query([
     'post_type' => 'post',
     'order' => 'DESC',
     'orderby' => 'date',
+    'cat' => get_queried_object_id(),
     'posts_per_page' => 1,
     'post__in' => $sticky,
 ]);
 ?>
 <!DOCTYPE html>
-<html class="no-js" <?php language_attributes()?> itemscope itemtype="http://schema.org/WebSite">
+<html class="no-js" <?php language_attributes() ?> itemscope itemtype="http://schema.org/WebSite">
   <head>
-    <?php get_template_part('partials/head')?>
+    <?php get_template_part('partials/head') ?>
   </head>
-  <body <?php body_class()?>>
-    <?php wp_body_open()?>
+  <body <?php body_class() ?>>
+    <?php wp_body_open() ?>
 
     <div class="ui-wrapper">
       <?php get_template_part('partials/header') ?>
