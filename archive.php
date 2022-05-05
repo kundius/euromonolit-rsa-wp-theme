@@ -26,7 +26,7 @@ $query_params = [
   //   'post__in' => ''
   // ],
   'orderby' => [
-    'is_sticky' => 'ASC',
+    // 'is_sticky' => 'ASC',
     'date' => 'DESC',
   ],
   // 'meta_key' => 'is_sticky',
