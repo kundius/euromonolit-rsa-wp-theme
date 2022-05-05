@@ -12,7 +12,7 @@
 }
 
 .archive-grid__cell {
-  width: calc(100% / 3);
+  width: calc((100% / 3) - 30px);
 }
 
 .archive-card {
@@ -33,6 +33,7 @@
 
 .archive-card__image img {
   display: block;
+  max-width: 100%;
 }
 
 .archive-card__body {
