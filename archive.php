@@ -29,7 +29,7 @@
                 </figure>
                 <div class="archive-card__body">
                   <div class="archive-card__date">
-                    <?php the_date('d.m.Y') ?>
+                    <?php the_date('d.m.Y, N') ?>
                   </div>
                   <h2 class="archive-card__title">
                     <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
@@ -38,16 +38,13 @@
                     <?php the_excerpt() ?>
                   </div>
                 </div>
-                <div class="archive-card__tags">
-                  <?php the_tags('') ?>
-                </div>
               </article>
             </div>
             <?php endwhile?>
-            <?php wp_reset_postdata()?>
+            <?php wp_reset_postdata() ?>
           </div>
 
-          <?php the_posts_pagination(['prev_text' => '', 'next_text' => ''])?>
+          <?php the_posts_pagination(['prev_text' => '', 'next_text' => '']) ?>
           <?php else: ?>
             <p>Извините, ничего не найдено.</p>
           <?php endif?>
@@ -58,7 +55,7 @@
         </div>
       </section>
 
-      <?php get_template_part('partials/footer')?>
+      <?php get_template_part('partials/footer') ?>
     </div>
   </body>
 </html>
