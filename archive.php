@@ -1,5 +1,5 @@
 <?php
-$sticky = get_option('sticky_posts');
+// $sticky = get_option('sticky_posts');
 
 $sticky_posts = new WP_Query([
     'post_type' => 'post',
@@ -7,7 +7,14 @@ $sticky_posts = new WP_Query([
     'orderby' => 'date',
     'cat' => get_queried_object_id(),
     'posts_per_page' => 1,
-    'post__in' => $sticky,
+    'ignore_sticky_posts' => true,
+    // 'post__in' => $sticky,
+    'meta_query' => [
+        [
+            'key' => 'post_favorite',
+            'value' => 1,
+        ],
+    ],
 ]);
 ?>
 <!DOCTYPE html>
