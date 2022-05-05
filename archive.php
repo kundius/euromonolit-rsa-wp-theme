@@ -30,27 +30,21 @@ $sticky_posts = new WP_Query([
 
       <section class="page-archive">
         <div class="ui-container">
-          <?php if ($sticky_posts->have_posts()): ?>
-          <div class="archive-sticky">
-            <?php while ($sticky_posts->have_posts()): ?>
-            <?php $sticky_posts->the_post() ?>
-            <article class="archive-sticky-card">
-              <figure class="archive-sticky-card__image">
-                <img src="<?php the_post_thumbnail_url('thumbnail') ?>" alt="<?php the_title() ?>" />
-              </figure>
-              <div class="archive-sticky-card__body">
-                <div class="archive-sticky-grid__date">
-                  <?php echo get_the_date('d.m.Y') ?>
-                </div>
-                <div class="archive-sticky-grid__title">
-                  <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                </div>
+          <?php if ($sticky_posts->have_posts()): while ($sticky_posts->have_posts()): $sticky_posts->the_post(); ?>
+          <article class="archive-sticky">
+            <figure class="archive-sticky__image">
+              <img src="<?php the_post_thumbnail_url('full') ?>" alt="<?php the_title() ?>" />
+            </figure>
+            <div class="archive-sticky__body">
+              <h2 class="archive-sticky__title">
+                <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+              </h2>
+              <div class="archive-sticky__date">
+                  <?php echo get_the_date('d.m.Y, l') ?>
               </div>
-            </article>
-            <?php endwhile ?>
-            <?php wp_reset_postdata() ?>
-          </div>
-          <?php endif ?>
+            </div>
+          </article>
+          <?php endwhile; wp_reset_postdata(); endif; ?>
           
           <?php if (have_posts()): ?>
           <div class="archive-grid js-magic-grid">
