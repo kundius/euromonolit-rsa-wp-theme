@@ -83,9 +83,7 @@ $sticky_posts = new WP_Query([
             <p>Извините, ничего не найдено.</p>
           <?php endif?>
 
-          <div class="page-archive__content ui-content">
-            <?php term_description() ?>
-          </div>
+          <div class="page-archive__content ui-content"><?php term_description() ?></div>
         </div>
       </section>
 
