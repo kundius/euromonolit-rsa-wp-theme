@@ -1,3 +1,17 @@
+<?php
+$articles = new WP_Query([
+    'post_type' => 'post',
+    'order' => 'DESC',
+    'orderby' => 'date',
+    'posts_per_page' => -1,
+    'meta_query' => [
+        [
+            'key' => 'post_favorite',
+            'value' => 1,
+        ],
+    ],
+]);
+?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes()?> itemscope itemtype="http://schema.org/WebSite">
   <head>
@@ -19,7 +33,6 @@
       <section class="page-archive">
         <div class="ui-container">
           <?php if (have_posts()): ?>
-          <?php the_post() ?>
           <div class="archive-grid js-magic-grid">
             <?php while (have_posts()): ?>
             <?php the_post() ?>
