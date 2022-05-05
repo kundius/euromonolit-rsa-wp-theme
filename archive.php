@@ -26,7 +26,7 @@ $query_params = [
   //   'post__in' => ''
   // ],
   'orderby' => [
-    'post__in' => $sticky,
+    'post__in' => [97],
     'date' => 'DESC'
   ],
   'paged' => get_query_var('paged') ?: 1,
