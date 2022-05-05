@@ -26,22 +26,22 @@ $query_params = [
   //   'post__in' => ''
   // ],
   'orderby' => [
-    // 'is_sticky' => 'ASC',
+    'is_sticky' => 'ASC',
     'date' => 'DESC',
   ],
   // 'meta_key' => 'is_sticky',
   'paged' => get_query_var('paged') ?: 1,
-  // 'meta_query' => [
-  //   'relation' => 'OR',
-  //   [
-  //     'key' => 'is_sticky',
-  //     'compare' => 'EXISTS'
-  //   ],
-  //   [
-  //     'key' => 'is_sticky',
-  //     'compare' => 'NOT EXISTS'
-  //   ]
-  // ],
+  'meta_query' => [
+    'relation' => 'OR',
+    [
+      'key' => 'is_sticky',
+      'compare' => 'EXISTS'
+    ],
+    [
+      'key' => 'is_sticky',
+      'compare' => 'NOT EXISTS'
+    ]
+  ],
   'tax_query' => [
     'relation' => 'AND',
     [
