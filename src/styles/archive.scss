@@ -9,14 +9,10 @@
 .archive-grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-top: -15px;
 }
 
 .archive-grid__cell {
-  width: calc(100% / 3);
-  padding-left: 15px;
-  padding-top: 15px;
+  width: calc((100% / 3) - (15px * 2 / 3)); // gutter 15 for 3 columns
 }
 
 .archive-card {
