@@ -33,6 +33,12 @@ $query_params = [
   ]
 ];
 $articles = new WP_Query($query_params);
+$pagination = [
+  'prev_text' => '',
+  'next_text' => '',
+  'total' => $articles->max_num_pages,
+  'current' => max(1, get_query_var('paged'))
+];
 ?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes() ?> itemscope itemtype="http://schema.org/WebSite">
@@ -96,8 +102,7 @@ $articles = new WP_Query($query_params);
             <?php wp_reset_postdata() ?>
           </div>
 
-          <?php wp_pagenavi(['query' => $articles]) ?>
-          <?php //the_posts_pagination(['prev_text' => '', 'next_text' => '']) ?>
+          <?php the_posts_pagination($pagination) ?>
           <?php else: ?>
             <p>Извините, ничего не найдено.</p>
           <?php endif?>
