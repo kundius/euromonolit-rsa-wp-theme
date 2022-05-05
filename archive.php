@@ -1,5 +1,4 @@
 <?php
-// $sticky = get_option('sticky_posts');
 $sticky_posts = new WP_Query([
   'post_type' => 'post',
   'order' => 'DESC',
@@ -16,12 +15,20 @@ $sticky_posts = new WP_Query([
   ],
 ]);
 
+$sticky = get_option('sticky_posts');
 $category = get_queried_object();
 $query_params = [
   'post_type' => 'post',
   // 'posts_per_page' => 10,
   // 'order' => 'DESC',
-  // 'orderby' => 'date',
+  // 'orderby' => [
+  //   'date',
+  //   'post__in' => ''
+  // ],
+  'orderby' => [
+    'post__in' => $sticky,
+    'date' => 'DESC'
+  ],
   'paged' => get_query_var('paged') ?: 1,
   'tax_query' => [
     'relation' => 'AND',
