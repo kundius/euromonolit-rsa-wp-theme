@@ -1,15 +1,12 @@
 <?php
-$articles = new WP_Query([
+$sticky = get_option('sticky_posts');
+
+$sticky_posts = new WP_Query([
     'post_type' => 'post',
     'order' => 'DESC',
     'orderby' => 'date',
-    'posts_per_page' => -1,
-    'meta_query' => [
-        [
-            'key' => 'post_favorite',
-            'value' => 1,
-        ],
-    ],
+    'posts_per_page' => 1,
+    'post__in' => $sticky,
 ]);
 ?>
 <!DOCTYPE html>
@@ -32,19 +29,19 @@ $articles = new WP_Query([
 
       <section class="page-archive">
         <div class="ui-container">
-          <?php if ($articles->have_posts()): ?>
-          <div class="archive-favorite">
-            <?php while ($articles->have_posts()): ?>
-            <?php $articles->the_post() ?>
-            <article class="archive-favorite-card">
-              <figure class="archive-favorite-card__image">
+          <?php if ($sticky_posts->have_posts()): ?>
+          <div class="archive-sticky">
+            <?php while ($sticky_posts->have_posts()): ?>
+            <?php $sticky_posts->the_post() ?>
+            <article class="archive-sticky-card">
+              <figure class="archive-sticky-card__image">
                 <img src="<?php the_post_thumbnail_url('thumbnail') ?>" alt="<?php the_title() ?>" />
               </figure>
-              <div class="archive-favorite-card__body">
-                <div class="archive-favorite-grid__date">
+              <div class="archive-sticky-card__body">
+                <div class="archive-sticky-grid__date">
                   <?php echo get_the_date('d.m.Y') ?>
                 </div>
-                <div class="archive-favorite-grid__title">
+                <div class="archive-sticky-grid__title">
                   <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
                 </div>
               </div>
