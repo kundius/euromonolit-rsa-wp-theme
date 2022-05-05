@@ -109,7 +109,7 @@ $pagination = [
                     <?php echo get_the_date('d.m.Y, l') ?>
                   </div>
                   <div class="archive-card__date">
-                    <?php print_r(get_post_meta(get_the_ID())) ?>
+                    <?php //print_r(get_post_meta(get_the_ID())) ?>
                   </div>
                   <h2 class="archive-card__title">
                     <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
