@@ -4,6 +4,10 @@
 
 .page-archive__content {
   margin-top: 60px;
+
+  &:empty {
+    display: none;
+  }
 }
 
 .archive-grid {
