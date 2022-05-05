@@ -19,6 +19,7 @@
       <section class="page-archive">
         <div class="ui-container">
           <?php if (have_posts()): ?>
+          <?php the_post() ?>
           <div class="archive-grid js-magic-grid">
             <?php while (have_posts()): ?>
             <?php the_post() ?>
