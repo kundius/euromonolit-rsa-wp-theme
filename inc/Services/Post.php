@@ -30,7 +30,11 @@ class Post implements Service
 
     public function on_save_post($post_id, $post, $update) {
       $sticky = \get_option('sticky_posts');
-      \add_post_meta($post_id, 'is_sticky', in_array($post_id, $sticky), true);
+      $is_sticky = in_array($post_id, $sticky);
+      \delete_post_meta($post_id, 'is_sticky');
+      if (!\update_post_meta($post_id, 'is_sticky', $is_sticky)) {
+        \add_post_meta($post_id, 'is_sticky', $is_sticky, true);
+      }
     }
 
     /**
