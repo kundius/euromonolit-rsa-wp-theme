@@ -32,6 +32,28 @@ $articles = new WP_Query([
 
       <section class="page-archive">
         <div class="ui-container">
+          <?php if ($articles->have_posts()): ?>
+          <div class="archive-favorite">
+            <?php while ($articles->have_posts()): ?>
+            <?php $articles->the_post() ?>
+            <article class="archive-favorite-card">
+              <figure class="archive-favorite-card__image">
+                <img src="<?php the_post_thumbnail_url('thumbnail') ?>" alt="<?php the_title() ?>" />
+              </figure>
+              <div class="archive-favorite-card__body">
+                <div class="archive-favorite-grid__date">
+                  <?php echo get_the_date('d.m.Y') ?>
+                </div>
+                <div class="archive-favorite-grid__title">
+                  <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                </div>
+              </div>
+            </article>
+            <?php endwhile ?>
+            <?php wp_reset_postdata() ?>
+          </div>
+          <?php endif ?>
+          
           <?php if (have_posts()): ?>
           <div class="archive-grid js-magic-grid">
             <?php while (have_posts()): ?>
