@@ -1,9 +1,9 @@
 .page-archive {
-
+  padding-bottom: 60px;
 }
 
 .page-archive__content {
-
+  margin-top: 60px;
 }
 
 .archive-grid {
@@ -98,6 +98,10 @@
   margin-top: 20px;
 }
 
+.archive-grid + .pagination {
+  margin-top: 60px;
+}
+
 .pagination {
   display: flex;
   align-items: center;
@@ -134,6 +138,10 @@
     font-size: 24px;
     color: #d2381c;
     font-weight: bold;
+
+    &:hover {
+      background: transparent;
+    }
   }
 
   .page-numbers.prev {
