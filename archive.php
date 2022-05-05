@@ -6,7 +6,6 @@ $sticky_posts = new WP_Query([
   'cat' => get_queried_object_id(),
   'posts_per_page' => 1,
   'ignore_sticky_posts' => true,
-  // 'post__in' => $sticky,
   'meta_query' => [
       [
           'key' => 'post_favorite',
@@ -15,33 +14,20 @@ $sticky_posts = new WP_Query([
   ],
 ]);
 
-$sticky = get_option('sticky_posts');
 $category = get_queried_object();
 $query_params = [
   'post_type' => 'post',
-  // 'posts_per_page' => 10,
-  // 'order' => 'DESC',
-  // 'orderby' => [
-  //   'date',
-  //   'post__in' => ''
-  // ],
   'orderby' => [
-    'meta_key' => 'DESC',
+    'is_sticky' => 'DESC',
     'date' => 'DESC',
   ],
-  'meta_key' => 'is_sticky',
   'paged' => get_query_var('paged') ?: 1,
-  // 'meta_query' => [
-  //   'relation' => 'OR',
-  //   [
-  //     'key' => 'is_sticky',
-  //     'compare' => 'EXISTS'
-  //   ],
-  //   [
-  //     'key' => 'is_sticky',
-  //     'compare' => 'NOT EXISTS'
-  //   ]
-  // ],
+  'meta_query' => [
+    [
+      'key' => 'is_sticky',
+      'compare' => 'EXISTS'
+    ],
+  ],
   'tax_query' => [
     'relation' => 'AND',
     [
@@ -107,9 +93,6 @@ $pagination = [
                 <div class="archive-card__body">
                   <div class="archive-card__date">
                     <?php echo get_the_date('d.m.Y, l') ?>
-                  </div>
-                  <div class="archive-card__date">
-                    <?php print_r(get_post_meta(get_the_ID())) ?>
                   </div>
                   <h2 class="archive-card__title">
                     <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
