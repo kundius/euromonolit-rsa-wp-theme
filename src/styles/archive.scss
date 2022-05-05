@@ -48,7 +48,7 @@
   line-height: 1;
 }
 
-.archive-card__date:hover {
+.archive-card__date::before {
   content: '';
   width: 15px;
   height: 14px;

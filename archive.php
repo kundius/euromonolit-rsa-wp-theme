@@ -29,7 +29,7 @@
                 </figure>
                 <div class="archive-card__body">
                   <div class="archive-card__date">
-                    <?php the_date('d.m.Y, N') ?>
+                    <?php echo get_the_date('d.m.Y, l') ?>
                   </div>
                   <h2 class="archive-card__title">
                     <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
