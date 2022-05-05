@@ -27,9 +27,10 @@ $query_params = [
   // ],
   'post__in' => get_option('sticky_posts'),
   'orderby' => [
-    'orderby' => 'post__in',
+    'meta_value' => 'DESC',
     'date' => 'DESC',
-  ],
+  ],,
+  'meta_key' => 'is_sticky',
   'paged' => get_query_var('paged') ?: 1,
   'tax_query' => [
     'relation' => 'AND',

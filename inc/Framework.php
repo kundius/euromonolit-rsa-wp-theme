@@ -9,6 +9,7 @@ use DomenART\Theme\Services\Fonts;
 use DomenART\Theme\Services\Menu;
 use DomenART\Theme\Services\Seo;
 use DomenART\Theme\Services\Acf;
+use DomenART\Theme\Services\Post;
 use DomenART\Theme\Services\Ajax;
 use DomenART\Theme\Services\Svg;
 use DomenART\Theme\Services\Theme;
@@ -36,6 +37,7 @@ class Framework
         Assets::class,
         Seo::class,
         Acf::class,
+        Post::class,
         Ajax::class,
         Fonts::class,
         Editor::class,
