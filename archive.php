@@ -26,10 +26,10 @@ $query_params = [
   //   'post__in' => ''
   // ],
   'orderby' => [
-    'meta_value' => 'DESC',
+    // 'meta_value' => 'DESC',
     'date' => 'DESC',
   ],
-  'meta_key' => 'is_sticky',
+  // 'meta_key' => 'is_sticky',
   'paged' => get_query_var('paged') ?: 1,
   'tax_query' => [
     'relation' => 'AND',
