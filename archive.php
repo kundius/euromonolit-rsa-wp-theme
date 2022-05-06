@@ -63,7 +63,7 @@ $pagination = [
         </div>
       </div>
 
-      <section class="page-archive">
+      <section class="archive-body">
         <div class="ui-container">
           <?php if ($sticky_posts->have_posts()): while ($sticky_posts->have_posts()): $sticky_posts->the_post(); ?>
           <article class="archive-sticky">
@@ -75,7 +75,7 @@ $pagination = [
                 <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
               </h2>
               <div class="archive-sticky__date">
-                  <?php echo get_the_date('d.m.Y, l') ?>
+                <?php echo get_the_date('d.m.Y, l') ?>
               </div>
             </div>
           </article>
@@ -112,7 +112,7 @@ $pagination = [
             <p>Извините, ничего не найдено.</p>
           <?php endif?>
 
-          <div class="page-archive__content ui-content"><?php term_description() ?></div>
+          <div class="archive-body__content ui-content"><?php term_description() ?></div>
         </div>
       </section>
 
