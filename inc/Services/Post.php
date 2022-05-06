@@ -34,6 +34,7 @@ class Post implements Service
       if (!\update_post_meta($post_id, 'is_sticky', $is_sticky)) {
         \add_post_meta($post_id, 'is_sticky', $is_sticky, true);
       }
+      clean_post_cache($post_id);
     }
 
     /**
