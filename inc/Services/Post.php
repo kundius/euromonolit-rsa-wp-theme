@@ -25,10 +25,10 @@ class Post implements Service
      */
     public function boot(Service_Container $container): void
     {
-      \add_action('post_updated', [$this, 'on_post_updated']);
+      \add_action('save_post_post', [$this, 'on_save_post']);
     }
 
-    public function on_post_updated($post_id) {
+    public function on_save_post($post_id) {
       $sticky = \get_option('sticky_posts');
       $is_sticky = in_array($post_id, $sticky);
       if (!\update_post_meta($post_id, 'is_sticky', $is_sticky)) {
