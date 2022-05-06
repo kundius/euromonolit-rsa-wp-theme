@@ -25,6 +25,7 @@
   }
 
   @include below(sm) {
+    min-height: auto;
   }
 }
 
@@ -54,6 +55,10 @@
   padding: 47px;
   width: 700px;
   max-width: 100%;
+
+  @include below(sm) {
+    padding: 20px;
+  }
 }
 
 .archive-sticky__title {
@@ -63,6 +68,10 @@
   line-height: 1;
   text-align: center;
   margin: 0;
+
+  @include below(sm) {
+    font-size: 24px;
+  }
 }
 
 .archive-sticky__title a {
