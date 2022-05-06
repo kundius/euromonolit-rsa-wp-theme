@@ -25,8 +25,7 @@ class Post implements Service
      */
     public function boot(Service_Container $container): void
     {
-      \add_action('save_post', [$this, 'on_change_post']);
-      \add_action('edit_post', [$this, 'on_change_post']);
+      \add_action('post_updated', [$this, 'on_change_post']);
     }
 
     public function on_change_post($post_id) {
