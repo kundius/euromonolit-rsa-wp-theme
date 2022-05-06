@@ -157,6 +157,10 @@
 
 .archive-card__body {
   padding: 25px 32px;
+
+  @include below(sm) {
+    padding: 20px;
+  }
 }
 
 .archive-card__date {
