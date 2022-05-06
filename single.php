@@ -25,10 +25,12 @@ if (strpos($post->post_content, '<!--more-->')) {
       <?php get_template_part('partials/page-breadcrumbs') ?>
 
       <div class="single-headline">
-        <h1 class="single-headline__title"><?php the_title()?></h1>
+        <div class="ui-container">
+          <h1 class="single-headline__title"><?php the_title() ?></h1>
 
-        <div class="single-headline__date">
-          <?php echo get_the_date('d.m.Y, l') ?>
+          <div class="single-headline__date">
+            <?php echo get_the_date('d.m.Y, l') ?>
+          </div>
         </div>
       </div>
 
@@ -56,6 +58,7 @@ if (strpos($post->post_content, '<!--more-->')) {
 
             <div class="single-meta single-meta_separated">
               <div class="single-meta__tags"><?php the_tags('')?></div>
+              <div></div>
               <div class="single-meta__share">
                 <div class="ya-share2" data-curtain data-shape="round" data-services="vkontakte,odnoklassniki,telegram"></div>
               </div>
@@ -67,6 +70,7 @@ if (strpos($post->post_content, '<!--more-->')) {
 
             <div class="single-meta">
               <div class="single-meta__tags"><?php the_tags('')?></div>
+              <div></div>
               <div class="single-meta__share">
                 <div class="ya-share2" data-curtain data-shape="round" data-services="vkontakte,odnoklassniki,telegram"></div>
               </div>
