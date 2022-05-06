@@ -20,6 +20,10 @@
   align-items: center;
   justify-content: center;
   padding: 40px;
+
+  @include below(md) {
+    height: 360px;
+  }
 }
 
 .archive-sticky__image {
@@ -109,6 +113,14 @@
   width: calc(100% / 3);
   padding-top: 15px;
   padding-left: 15px;
+
+  @include below(md) {
+    width: calc(100% / 2);
+  }
+
+  @include below(sm) {
+    width: calc(100% / 1);
+  }
 }
 
 .archive-card {
