@@ -50,7 +50,6 @@
   padding-left: 168px;
   padding-right: 168px;
   padding-top: 60px;
-  padding-bottom: 56px;
 
   @include below(lg) {
     padding-left: 0;
@@ -215,7 +214,7 @@
 }
 
 .see-also {
-  margin-top: 32px;
+  margin-top: 56px;
 }
 
 .see-also__title {
@@ -223,8 +222,10 @@
   font-weight: 700;
   line-height: 1;
   color: #000;
+  border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 28px;
+  padding-top: 32px;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
