@@ -12,17 +12,19 @@
 
 .archive-sticky {
   margin-bottom: 50px;
-  height: 420px;
+  min-height: 420px;
   overflow: hidden;
   position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
 
   @include below(md) {
-    height: 360px;
+    min-height: 360px;
+  }
+
+  @include below(sm) {
   }
 }
 
