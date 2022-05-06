@@ -41,8 +41,6 @@
 }
 
 .archive-sticky__body {
-  position: relative;
-  z-index: 20;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
@@ -64,10 +62,20 @@
 .archive-sticky__title a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 .archive-sticky__title a:hover {
   text-decoration: underline;
+}
+
+.archive-sticky__title a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .archive-sticky__date {
