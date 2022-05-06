@@ -1,13 +1,11 @@
 .single-body {
-  background: linear-gradient(to bottom, #f1f1f1 0, #f1f1f1 222px, #f6f6f6 222px, #f6f6f6 100%);
-  position: relative;
-  z-index: 20;
   padding-bottom: 30px;
   padding-top: 34px;
 }
 
 .single-headline {
-  margin-bottom: 37px;
+  padding-bottom: 37px;
+  border-bottom: 1px solid #d5d5d5;
 }
 
 .single-headline__date {
@@ -48,14 +46,12 @@
 }
 
 .single-main {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.07);
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-left: 168px;
+  margin-right: 168px;
 
-  @include below(sm) {
-    padding-left: 8px;
-    padding-right: 8px;
+  @include below(lg) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -105,13 +101,16 @@
 }
 
 .single-meta {
-  border-top: 1px solid #e4e5ea;
-  border-bottom: 1px solid #e4e5ea;
-  padding-top: 15px;
-  padding-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &_separated {
+    border-top: 1px solid #e4e5ea;
+    border-bottom: 1px solid #e4e5ea;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
   @include below(sm) {
     flex-direction: column;
@@ -128,6 +127,10 @@
   z-index: 20;
   max-width: 480px;
 
+  &:empty {
+    display: none;
+  }
+
   a {
     padding: 0 2px;
     text-decoration: none;
@@ -135,7 +138,7 @@
 
     &:hover {
       color: #fff;
-      background: #225a7e;
+      background: #d2381c;
     }
   }
 

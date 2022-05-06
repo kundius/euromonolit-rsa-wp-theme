@@ -55,9 +55,7 @@ if (strpos($post->post_content, '<!--more-->')) {
             <?php endif?>
 
             <div class="single-meta single-meta_separated">
-              <div class="single-meta__tags">
-                <?php the_tags('')?>
-              </div>
+              <div class="single-meta__tags"><?php the_tags('')?></div>
               <div class="single-meta__share">
                 <div class="ya-share2" data-curtain data-shape="round" data-services="vkontakte,odnoklassniki,telegram"></div>
               </div>
@@ -68,9 +66,7 @@ if (strpos($post->post_content, '<!--more-->')) {
             </div>
 
             <div class="single-meta">
-              <div class="single-meta__tags">
-                <?php the_tags('')?>
-              </div>
+              <div class="single-meta__tags"><?php the_tags('')?></div>
               <div class="single-meta__share">
                 <div class="ya-share2" data-curtain data-shape="round" data-services="vkontakte,odnoklassniki,telegram"></div>
               </div>
