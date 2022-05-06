@@ -160,7 +160,7 @@ $products = new WP_Query([
             <div class="landing-catalog__products-item">
               <article class="catalog-card">
                 <figure class="catalog-card__image">
-                  <img src="<?php the_post_thumbnail_url('theme-medium') ?>" alt="<?php the_title() ?>" />
+                  <img src="<?php the_post_thumbnail_url('theme-small') ?>" alt="<?php the_title() ?>" />
                 </figure>
                 <div class="catalog-card__body">
                   <h2 class="catalog-card__title">
