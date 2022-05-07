@@ -757,5 +757,13 @@ body {
     * + ul {
       margin-top: 20px;
     }
+
+    ul li {
+      padding-left: 24px;
+    }
+
+    ul li::before {
+      top: 4px;
+    }
   }
 }

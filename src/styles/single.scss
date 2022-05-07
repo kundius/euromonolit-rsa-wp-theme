@@ -10,6 +10,11 @@
   padding-bottom: 57px;
   border-bottom: 1px solid #d5d5d5;
   margin-bottom: 60px;
+
+  @include below(sm) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .single-headline__title {
@@ -109,6 +114,10 @@
 
 .single-main__meta-second {
   margin-top: 70px;
+
+  @include below(sm) {
+    margin-top: 40px;
+  }
 }
 
 .single-meta {
@@ -219,6 +228,10 @@
 
 .see-also {
   margin-top: 56px;
+
+  @include below(sm) {
+    margin-top: 40px;
+  }
 }
 
 .see-also__title {
