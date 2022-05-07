@@ -560,35 +560,34 @@ body {
   }
 
   h2 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 1;
     font-weight: bold;
     margin: 0;
-    padding-left: 90px;
-    position: relative;
   }
 
   * + h2 {
     margin-top: 45px;
   }
 
-  h2::before {
-    content: '';
-    position: absolute;
-    display: block;
-    left: 4px;
-    top: 16px;
-    background-color: rgb(251, 187, 73);
-    width: 68px;
-    height: 6px;
+  h3 {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: #d2381c;
+    position: relative;
+    padding-left: 30px;
   }
 
-  h3 {
-    font-size: 28px;
-    line-height: 34px;
-    font-weight: 300;
-    margin: 0;
-    color: #215578;
+  h3::before {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
   }
 
   * + h3 {
@@ -596,30 +595,32 @@ body {
   }
 
   h4 {
-    padding-left: 90px;
+    padding-left: 130px;
     padding-right: 60px;
     font-size: 24px;
-    line-height: 30px;
-    color: #215578;
-    font-weight: 300;
+    line-height: 26px;
+    color: #3f3f3f;
+    font-weight: bold;
     margin: 35px 0;
     padding-top: 18px;
     padding-bottom: 18px;
-    border-top: 1px solid #3681b3;
-    border-bottom: 1px solid #3681b3;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
   }
 
   h5 {
-    padding-left: 90px;
-    font-size: 24px;
-    line-height: 30px;
-    color: #7c7c7c;
-    font-weight: 300;
-    margin: 35px 0;
+    font-size: 22px;
+    line-height: 26px;
+    color: #3f3f3f;
+    font-weight: bold;
+  }
+
+  * + h5 {
+    margin-top: 45px;
   }
 
   h6 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 26px;
     color: #000000;
     font-weight: bold;
@@ -627,7 +628,7 @@ body {
   }
 
   * + h6 {
-    margin-top: 25px;
+    margin-top: 45px;
   }
 
   p {
@@ -640,7 +641,7 @@ body {
 
   ul {
     list-style: none;
-    padding: 0 0 0 90px;
+    padding: 0 0 0 130px;
     margin: 0;
   }
 
@@ -661,10 +662,9 @@ body {
     content: '';
     position: absolute;
     display: block;
-    width: 10px;
-    height: 10px;
-    background: #3681b3;
-    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    border: 4px solid #df3e10;
     left: 8px;
     top: 9px;
   }
@@ -680,7 +680,7 @@ body {
 
   a:not(.wp-block-button__link):hover {
     color: #fff;
-    background: #faaf00;
+    background: #d2381c;
     text-decoration: none;
   }
 
@@ -730,10 +730,12 @@ body {
     }
   
     h5 {
-      padding-left: 0;
       font-size: 20px;
       line-height: 24px;
-      margin: 25px 0;
+    }
+  
+    * + h5 {
+      margin-top: 35px;
     }
   
     h6 {
@@ -742,7 +744,7 @@ body {
     }
   
     * + h6 {
-      margin-top: 20px;
+      margin-top: 35px;
     }
 
     * + p {
