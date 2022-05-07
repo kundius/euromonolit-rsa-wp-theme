@@ -24,7 +24,7 @@
         </div>
         <div class="page-404-desc">
           Возможно, она была перемещена или удалена.<br />
-          Вы можете попробовать ещё раз с <a href="/">главной</a>, ознакомиться с <a href="<?php the_permalink(52) ?>">видами опалубки</a>  или  <a data-hystmodal="#feedback">сообщить нам о своей проблеме</a>.
+          Вы можете попробовать ещё раз с <a href="/">главной</a>, ознакомиться с <a href="<?php the_permalink(52) ?>">видами опалубки</a>  или  <a data-hystmodal="#modal-feedback">сообщить нам о своей проблеме</a>.
         </div>
         <div class="page-404-phone">
           <div class="page-404-phone__label">Звоните:</div>
