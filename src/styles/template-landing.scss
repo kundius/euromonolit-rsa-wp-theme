@@ -538,7 +538,7 @@
   transform: scale(1.1);
 }
 
-.landing-order {
+.section-order {
   background: url('../images/bg-order.jpg') repeat 50% 50%;
   background-attachment: fixed;
   background-size: cover;
@@ -546,11 +546,11 @@
   padding-bottom: 35px;
 }
 
-.landing-order__container {
+.section-order__container {
   position: relative;
 }
 
-.landing-order__container::before {
+.section-order__container::before {
   content: '';
   background-color: rgba(187, 192, 195, 0.38);
   position: absolute;
@@ -560,7 +560,7 @@
   height: 124px;
 }
 
-.landing-order__container::after {
+.section-order__container::after {
   content: '';
   background-color: rgb(255, 36, 11);
   width: 16px;
@@ -570,7 +570,7 @@
   top: -178px;
 }
 
-.landing-order__title {
+.section-order__title {
   text-align: center;
   font-size: 48px;
   line-height: 1;
@@ -582,11 +582,11 @@
   }
 }
 
-.landing-order__title span {
+.section-order__title span {
   color: #cdcfd0;
 }
 
-.landing-order__description {
+.section-order__description {
   text-align: center;
   font-size: 16px;
   line-height: 18px;
@@ -603,7 +603,7 @@
   }
 }
 
-.landing-order__form {
+.section-order__form {
   width: 864px;
   max-width: 100%;
   margin-left: auto;
@@ -615,36 +615,36 @@
   }
 }
 
-.landing-order-form {
+.section-order-form {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   position: relative;
 }
 
-.landing-order-form__field {
+.section-order-form__field {
   flex-grow: 1;
   width: 150px;
 }
 
-.landing-order-form__submit {
+.section-order-form__submit {
   flex-grow: 2;
   max-width: 312px;
 }
 
-.landing-order-form__submit .ui-button-submit {
+.section-order-form__submit .ui-button-submit {
   width: 100%;
   letter-spacing: 0.025em;
 }
 
-.landing-order-form__rules {
+.section-order-form__rules {
   width: 100%;
   display: flex;
   justify-content: center;
   color: #fff;
 }
 
-.landing-order-form__loader {
+.section-order-form__loader {
   display: none;
 
   ._mail-sending & {
@@ -652,7 +652,7 @@
   }
 }
 
-.landing-order-form-result {
+.section-order-form-result {
   display: none;
   position: absolute;
   background-color: rgb(63 65 63 / 98%);
@@ -665,7 +665,7 @@
   border: none;
 }
 
-.landing-order-form-result::before {
+.section-order-form-result::before {
   content: '';
   border-radius: inherit;
   position: absolute;
@@ -676,7 +676,7 @@
   border: 2px solid transparent;
 }
 
-.landing-order-form-result_success {
+.section-order-form-result_success {
   box-shadow: 0px 0px 20px -10px rgb(125 136 39 / 35%), 0px 0px 2px rgb(0 0 0 / 10%), 0px 4px 19px rgb(125 136 39 / 35%), inset 0px 0px 18px rgb(125 168 125 / 21%), inset 0px 0px 18px rgb(125 189 57 / 31%), inset 0px -3px 14px rgb(125 100 39 / 20%);
   
   ._mail-sent & {
@@ -684,11 +684,11 @@
   }
 }
 
-.landing-order-form-result_success::before {
+.section-order-form-result_success::before {
   border-color: rgba(125, 207, 189, 0.46);
 }
 
-.landing-order-form-result_failed {
+.section-order-form-result_failed {
   box-shadow: 0px 0px 20px -10px rgb(255 136 39 / 35%), 0px 0px 2px rgb(0 0 0 / 10%), 0px 4px 19px rgb(255 136 39 / 35%), inset 0px 0px 18px rgb(255 168 255 / 21%), inset 0px 0px 18px rgb(255 189 57 / 31%), inset 0px -3px 14px rgb(255 100 39 / 20%);
   
   ._mail-failed & {
@@ -696,22 +696,22 @@
   }
 }
 
-.landing-order-form-result_failed::before {
+.section-order-form-result_failed::before {
   border-color: rgba(255, 207, 189, 0.46);
 }
 
-.landing-order-form-result__title {
+.section-order-form-result__title {
   font-size: 24px;
   color: #fff;
 }
 
-.landing-order-form-result__desc {
+.section-order-form-result__desc {
   font-size: 18px;
   color: #fff;
   margin-top: 12px;
 }
 
-.landing-order-form-result__close {
+.section-order-form-result__close {
   position: absolute;
   right: 6px;
   top: 6px;
@@ -723,11 +723,11 @@
   border: none;
 }
 
-.landing-order-form-result__close:hover {
+.section-order-form-result__close:hover {
   background: rgba(0, 0, 0, .1);
 }
 
-.landing-order-form-result__close::before {
+.section-order-form-result__close::before {
   content: '';
   width: 20px;
   height: 2px;
@@ -738,7 +738,7 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.landing-order-form-result__close::after {
+.section-order-form-result__close::after {
   content: '';
   width: 20px;
   height: 2px;
