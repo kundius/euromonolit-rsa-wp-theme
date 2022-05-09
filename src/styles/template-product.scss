@@ -97,7 +97,6 @@
 }
 
 .product-body {
-  padding-bottom: 40px;
   position: relative;
 }
 
@@ -105,7 +104,7 @@
   position: absolute;
   width: 20px;
   height: 40px;
-  bottom: -25px;
+  bottom: -65px;
   left: 50%;
   margin-left: -10px;
 
@@ -131,10 +130,6 @@
     bottom: 0;
     transform: translateX(-50%) rotate(45deg);
   }
-}
-
-.product-body__content {
-
 }
 
 .product-gallery {

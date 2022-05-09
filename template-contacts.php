@@ -16,7 +16,7 @@ Template Name: Контакты
       <?php get_template_part('partials/page-breadcrumbs') ?>
       <?php get_template_part('partials/page-headline') ?>
 
-      <section class="page-contacts">
+      <section class="page-body contacts-body">
         <div class="ui-container">
           <div class="contacts-layout">
             <div class="contacts-layout__map">
@@ -138,7 +138,7 @@ Template Name: Контакты
             </div>
           </div>
 
-          <div class="page-contacts__content ui-content">
+          <div class="page-body__content ui-content">
             <?php the_content() ?>
           </div>
         </div>

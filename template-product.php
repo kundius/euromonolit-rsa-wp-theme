@@ -19,9 +19,9 @@ $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $
       <?php get_template_part('partials/page-breadcrumbs') ?>
       <?php get_template_part('partials/page-headline', null, [ 'is_product' => true ]) ?>
 
-      <section class="product-body">
+      <section class="page-body product-body">
         <div class="ui-container">
-          <div class="product-body__content ui-content">
+          <div class="page-body__content ui-content">
             <?php the_content() ?>
           </div>
 
