@@ -6,6 +6,10 @@
   @include below(md) {
     flex-direction: column;
   }
+
+  @include below(sm) {
+    margin-top: 40px;
+  }
 }
 
 .product-include__gap-1 {
