@@ -79,3 +79,52 @@
 .product-include__item + .product-include__item {
   margin-top: 15px;
 }
+
+.product-body {
+  padding-bottom: 40px;
+}
+
+.product-body__content {
+
+}
+
+.product-gallery {
+
+}
+
+.product-gallery__title {
+
+}
+
+.product-gallery__items {
+
+}
+
+.product-gallery__item {
+
+}
+
+.product-price-info {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 30px;
+}
+
+.product-price-info__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(158, 158, 158);
+  border: 2px solid rgb(158, 158, 158);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+}
+
+.product-price-info__desc {
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  line-height: 28px;
+  font-weight: bold;
+}
