@@ -25,10 +25,6 @@ $products = new WP_Query([
 
       <div class="page-body catalog-body">
         <div class="ui-container">
-          <div class="page-body__content ui-content">
-            <?php the_content() ?>
-          </div>
-
           <?php if ($products->have_posts()): ?>
           <div class="catalog-body__products">
             <div class="catalog-grid">
@@ -58,10 +54,7 @@ $products = new WP_Query([
           </div>
           <?php endif?>
 
-          <div class="catalog-body__content ui-content">
-            <?php the_content()?>
-          </div>
-
+          <div class="catalog-body__content ui-content"><?php the_content() ?></div>
         </div>
       </div>
 

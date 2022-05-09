@@ -2,8 +2,12 @@
 
 }
 
-.catalog-body__products {
+.catalog-body__content {
   margin-top: 60px;
+
+  &:empty {
+    display: none;
+  }
 
   @include below(sm) {
     margin-top: 30px;
