@@ -8,7 +8,7 @@ if (strlen($title) > 100) {
   $title_size = 'small';
 }
 ?>
-<div class="page-headline">
+<div class="page-headline<?php if ($args['is_product']): echo ' page-headline_product'; endif ?>">
   <div class="ui-container">
     <h1 class="page-headline__title <?php echo 'page-headline__title_' . $title_size ?>"><?php echo $title ?></h1>
   </div>

@@ -14,7 +14,7 @@ Template Name: Продукт
     <div class="ui-wrapper">
       <?php get_template_part('partials/header') ?>
       <?php get_template_part('partials/page-breadcrumbs') ?>
-      <?php get_template_part('partials/page-headline') ?>
+      <?php get_template_part('partials/page-headline', null, [ 'is_product' => true ]) ?>
 
       <section class="product-body">
         <div class="ui-container">
@@ -54,6 +54,12 @@ Template Name: Продукт
               </div>
               <?php endforeach ?>
             </div>
+          </div>
+          <?php endif ?>
+
+          <?php if ($price = get_field('product_price')): ?>
+          <div class="product-price">
+            <?php echo $price ?>
           </div>
           <?php endif ?>
         </div>
