@@ -353,7 +353,7 @@ $sticky_posts = new WP_Query([
       <section class="section-map">
         <?php the_field('theme_footer-map', 'options') ?>
       </section>
-      
+
       <?php get_template_part('partials/footer') ?>
     </div>
   </body>
