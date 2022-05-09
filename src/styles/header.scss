@@ -119,6 +119,10 @@
     position: relative;
     padding: 2px 0;
   }
+
+  @include below(sm) {
+    padding: 4px 0;
+  }
 }
 
 .header_fixed .header-second {
@@ -137,7 +141,7 @@
   }
 
   @include below(sm) {
-    height: 60px;
+    height: 56px;
   }
 }
 
