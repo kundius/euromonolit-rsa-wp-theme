@@ -45,21 +45,16 @@ Template Name: Продукт
             <div class="product-include__list">
               <?php foreach ($include['items'] as $item): ?>
               <div class="product-include__item">
-                <div class="product-include__item-icon">
-                  <img src="<?php echo $item['icon']['url'] ?>" alt="<?php echo $item['icon']['title'] ?>" />
-                </div>
-                <div class="product-include__item-name">
-                  <?php echo $item['name'] ?>
-                </div>
+                <?php echo $item['title'] ?>
               </div>
               <?php endforeach ?>
             </div>
           </div>
           <?php endif ?>
 
-          <?php if ($price = get_field('product_price')): ?>
-          <div class="product-price">
-            <?php echo $price ?>
+          <?php if ($price_info = get_field('product_price-info')): ?>
+          <div class="product-price-info">
+            <?php echo $price_info ?>
           </div>
           <?php endif ?>
         </div>
