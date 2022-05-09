@@ -4,7 +4,7 @@ Template Name: Продукт
 */
 $gallery = get_field('product_gallery');
 $gallery_items = $gallery['items'] || [];
-print_r($gallery);
+print_r($gallery['items']);
 $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $gallery_items));
 ?>
 <!DOCTYPE html>
