@@ -54,7 +54,7 @@ $products = new WP_Query([
           </div>
           <?php endif?>
 
-          <div class="catalog-body__content ui-content"><?php the_content() ?></div>
+          <div class="page-body__content ui-content"><?php the_content() ?></div>
         </div>
       </div>
 

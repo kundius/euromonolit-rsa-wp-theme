@@ -63,7 +63,7 @@ $pagination = [
         </div>
       </div>
 
-      <section class="archive-body">
+      <section class="page-body archive-body">
         <div class="ui-container">
           <?php if ($sticky_posts->have_posts()): while ($sticky_posts->have_posts()): $sticky_posts->the_post(); ?>
           <article class="archive-sticky">
@@ -112,7 +112,7 @@ $pagination = [
             <p>Извините, ничего не найдено.</p>
           <?php endif?>
 
-          <div class="archive-body__content ui-content"><?php term_description() ?></div>
+          <div class="page-body__content ui-content"><?php term_description() ?></div>
         </div>
       </section>
 

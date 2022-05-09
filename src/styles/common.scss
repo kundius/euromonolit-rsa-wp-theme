@@ -19,6 +19,18 @@
   margin: 40px 0;
 }
 
+.page-body__content {
+  margin-top: 60px;
+
+  &:empty {
+    display: none;
+  }
+
+  @include below(sm) {
+    margin-top: 30px;
+  }
+}
+
 .page-headline {
   // padding: 38px 0 40px;
   margin: 40px 0;
