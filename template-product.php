@@ -30,9 +30,11 @@ $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $
             <div class="product-gallery__title"><?php echo $gallery['title'] ?></div>
             <div class="product-gallery__items">
               <?php foreach ($gallery_items as $item): ?>
-              <figure class="product-gallery__item" data-modal-attachment="<?php echo $item['id'] ?>" data-modal-attachment-queue="<?php echo $gallery_ids ?>">
-                <img src="<?php echo $item['sizes']['theme-medium'] ?>" alt="" />
-              </figure>
+              <div class="product-gallery__item">
+                <figure class="product-gallery__item-figure" data-modal-attachment="<?php echo $item['id'] ?>" data-modal-attachment-queue="<?php echo $gallery_ids ?>">
+                  <img src="<?php echo $item['sizes']['theme-medium'] ?>" alt="" />
+                </figure>
+              </div>
               <?php endforeach ?>
             </div>
           </div>
