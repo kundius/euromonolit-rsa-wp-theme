@@ -21,9 +21,7 @@ $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $
 
       <section class="page-body product-body">
         <div class="ui-container">
-          <div class="page-body__content ui-content">
-            <?php the_content() ?>
-          </div>
+          <div class="product-body__content ui-content"><?php the_content() ?></div>
 
           <?php if (count($gallery_items) > 0): ?>
           <div class="product-gallery">

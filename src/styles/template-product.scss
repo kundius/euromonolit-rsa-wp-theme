@@ -100,6 +100,18 @@
   position: relative;
 }
 
+.product-body__content {
+  margin-bottom: 60px;
+
+  &:empty {
+    display: none;
+  }
+
+  @include below(sm) {
+    margin-bottom: 30px;
+  }
+}
+
 .product-body__arrow {
   position: absolute;
   width: 20px;
