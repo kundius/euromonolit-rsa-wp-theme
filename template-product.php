@@ -67,6 +67,8 @@ $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $
             </div>
           </div>
           <?php endif ?>
+
+          <div class="product-body__arrow"></div>
         </div>
       </section>
 
