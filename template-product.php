@@ -2,6 +2,9 @@
 /*
 Template Name: Продукт
 */
+$gallery = get_field('product_gallery');
+$gallery_items = $gallery['items'] || [];
+$gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $gallery_items));
 ?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes() ?> itemscope itemtype="http://schema.org/WebSite">
@@ -22,12 +25,12 @@ Template Name: Продукт
             <?php the_content() ?>
           </div>
 
-          <?php if ($gallery = get_field('product_gallery')): ?>
+          <?php if (count($gallery_items) > 0): ?>
           <div class="product-gallery">
             <div class="product-gallery__title"><?php echo $gallery['title'] ?></div>
             <div class="product-gallery__items">
-              <?php foreach ($gallery['items'] as $item): ?>
-              <div class="product-gallery__item" data-modal-attachment="<?php echo $item['id'] ?>" data-modal-attachment-queue="<?php echo $ids ?>">
+              <?php foreach ($gallery_items as $item): ?>
+              <div class="product-gallery__item" data-modal-attachment="<?php echo $item['id'] ?>" data-modal-attachment-queue="<?php echo $gallery_ids ?>">
                 <img src="<?php echo $item['sizes']['theme-medium'] ?>" alt="" />
               </div>
               <?php endforeach ?>
