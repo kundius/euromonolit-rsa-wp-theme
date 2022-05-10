@@ -1,18 +1,13 @@
 .page-404-main {
   width: 100%;
   min-height: 100vh;
-  background: #0d5c97 url('../images/bg-404.png') no-repeat 50% 100%;
+  background: #565e60;
   padding-top: 88px;
   padding-bottom: 220px;
-
-  @media (min-width: 1920px) {
-    background-position: 100% 100%;
-  }
 
   @include below(sm) {
     padding-top: 40px;
     padding-bottom: 100px;
-    background-size: auto 200px;
   }
 }
 
@@ -27,23 +22,36 @@
 }
 
 .page-404-header__logo {
-  margin-right: 30px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: -38px;
+  margin-bottom: -38px;
+  background-image: linear-gradient(35deg,#c32613 0,#e04925 50%,#c32613 100%);
+  width: 269px;
+  padding: 38px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  align-self: normal;
+  transition: .5s ease;
+  transition-property: padding-bottom, margin-bottom, padding-top, margin-top;
+}
 
-  a {
-    display: block;
-  }
+.page-404-header__logo-image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
 
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-  @include below(sm) {
-    margin: 0;
-  }
+.page-404-header__logo-desc {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 5px;
+  display: block;
+  text-align: center;
 }
 
 .page-404-header__desc {
