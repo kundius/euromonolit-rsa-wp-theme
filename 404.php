@@ -11,11 +11,13 @@
         <div class="page-404-header">
           <div class="page-404-header__logo">
             <a href="/">
-              <img src="<?php bloginfo('template_url') ?>/dist/images/logo-white.png" alt="<?php bloginfo('name') ?>" />
+              <img src="<?php bloginfo('template_url') ?>/dist/images/logo.png" alt="<?php bloginfo('name') ?>" class="page-404-header__logo-image" />
             </a>
+            <span class="page-404-header__logo-desc">ремонт    строительство    аренда</span>
           </div>
           <div class="page-404-header__desc">
-            Аренда опалубки для<br /> коттеджного/загородного строительства
+            Ремонт и аренда опалубки<br />
+            в Санкт-Петербурге и Ленинградской области
           </div>
         </div>
         <div class="page-404-code">
