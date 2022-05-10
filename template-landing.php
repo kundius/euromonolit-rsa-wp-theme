@@ -48,7 +48,7 @@ $sticky_posts = new WP_Query([
               </div>
             </div>
             <div class="intro-layout__form">
-              <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="intro-form js-form">
+              <form action="/wp-json/contact-form-7/v1/contact-forms/150/feedback" method="post" class="intro-form js-form">
                 <div class="intro-form__title">
                   Заказать обратный<br />
                   звонок
@@ -296,7 +296,7 @@ $sticky_posts = new WP_Query([
               </div>
 
               <div class="section-ask__form">
-                <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="ask-form js-form">
+                <form action="/wp-json/contact-form-7/v1/contact-forms/150/feedback" method="post" class="ask-form js-form">
                   <div class="ask-form__row">
                     <input type="text" name="your-name" class="ui-input" placeholder="Имя:" />
                   </div>

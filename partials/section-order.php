@@ -7,7 +7,7 @@
       У нас Вы можете заказать ремонт опалубки и быть уверены, что результат превзойдёт все ожидания. Мы гарантируем качественный и&nbsp;надежный ремонт оборудования, которое будет служить для проведения строительных работ намного дольше.
     </div>
     <div class="section-order__form">
-      <form action="/wp-json/contact-form-7/v1/contact-forms/19/feedback" method="post" class="section-order-form js-form">
+      <form action="/wp-json/contact-form-7/v1/contact-forms/150/feedback" method="post" class="section-order-form js-form">
         <div class="section-order-form__field">
           <input type="text" name="your-name" class="ui-input-flat" placeholder="Имя:" />
         </div>
