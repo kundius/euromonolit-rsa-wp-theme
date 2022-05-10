@@ -55,13 +55,13 @@
 
     <div class="footer__links">
       <div class="footer__links-item">
-        <a href="<?php the_permalink(297) ?>">Карта сайта</a>
+        <a href="<?php the_permalink(152) ?>">Карта сайта</a>
       </div>
       <div class="footer__links-item">
-        <a href="<?php the_permalink(297) ?>">Пользовательское соглашение</a>
+        <a href="<?php the_permalink(154) ?>">Пользовательское соглашение</a>
       </div>
       <div class="footer__links-item">
-        <a href="<?php the_permalink(297) ?>">Политика обработки персональных данных</a>
+        <a href="<?php the_permalink(3) ?>">Политика обработки персональных данных</a>
       </div>
     </div>
 
