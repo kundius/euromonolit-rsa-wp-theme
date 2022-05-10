@@ -24,6 +24,7 @@
 .page-404-header__logo {
   margin-top: -38px;
   margin-bottom: -38px;
+  margin-right: 16px;
   background-image: linear-gradient(35deg,#c32613 0,#e04925 50%,#c32613 100%);
   width: 269px;
   padding: 38px 6px;
@@ -113,7 +114,7 @@
   a {
     text-decoration: none;
     color: inherit;
-    background-color: rgba(255, 255, 255, 0.149);
+    background-color: #d2381c;
 
     &:hover {
       text-decoration: none;
