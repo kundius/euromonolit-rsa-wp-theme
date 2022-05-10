@@ -36,6 +36,17 @@
   align-self: normal;
   transition: .5s ease;
   transition-property: padding-bottom, margin-bottom, padding-top, margin-top;
+
+  @include below(md) {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include below(sm) {
+    margin: 0 auto;
+  }
 }
 
 .page-404-header__logo-image {
