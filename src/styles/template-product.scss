@@ -108,6 +108,14 @@
   flex-wrap: wrap;
   margin-left: -50px;
 
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 1em;
+  }
+
   @include below(sm) {
     margin-top: 30px;
   }
