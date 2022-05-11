@@ -20,14 +20,26 @@
 }
 
 .page-body__content {
-  margin-top: 60px;
+  // margin-top: 60px;
 
-  &:empty {
-    display: none;
+  // &:empty {
+  //   display: none;
+  // }
+
+  // @include below(sm) {
+  //   margin-top: 30px;
+  // }
+  padding-left: 168px;
+  padding-right: 168px;
+
+  @include below(lg) {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
-  @include below(sm) {
-    margin-top: 30px;
+  @include below(md) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
