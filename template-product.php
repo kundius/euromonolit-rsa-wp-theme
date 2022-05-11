@@ -21,17 +21,18 @@ $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $
 
       <section class="page-body product-body">
         <div class="ui-container">
-          <?php if ($content = get_field('product_content')): ?>
+          <?php $product_content = get_field('product_content') ?>
+          <?php if (!empty($product_content['left']) && !empty($product_content['right'])): ?>
           <div class="product-body__content">
-            <?php if (!empty($content['left'])): ?>
+            <?php if (!empty($product_content['left'])): ?>
             <div class="product-body__content-left">
-              <?php echo $content['left'] ?>
+              <?php echo $product_content['left'] ?>
             </div>
             <?php endif ?>
 
-            <?php if (!empty($content['right'])): ?>
+            <?php if (!empty($product_content['right'])): ?>
             <div class="product-body__content-right">
-              <?php echo $content['right'] ?>
+              <?php echo $product_content['right'] ?>
             </div>
             <?php endif ?>
           </div>
@@ -52,12 +53,16 @@ $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $
           </div>
           <?php endif ?>
 
-          <?php if ($include = get_field('product_include')): ?>
+          <?php $include = get_field('product_include') ?>
+          <?php if (!empty($include['title']) && count($include['items']) > 0): ?>
           <div class="product-include">
+            <?php if (!empty($include['title'])): ?>
             <div class="product-include__gap-1"></div>
             <div class="product-include__title">
               <span><?php echo $include['title'] ?></span>
             </div>
+            <?php endif ?>
+            <?php if (count($include['items']) > 0): ?>
             <div class="product-include__gap-2"></div>
             <div class="product-include__list">
               <?php foreach ($include['items'] as $item): ?>
@@ -66,6 +71,7 @@ $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $
               </div>
               <?php endforeach ?>
             </div>
+            <?php endif ?>
           </div>
           <?php endif ?>
 
