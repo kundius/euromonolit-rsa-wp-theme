@@ -1,0 +1,47 @@
+.section-body {
+  position: relative;
+}
+
+.section-body__content {
+  margin-bottom: 60px;
+
+  &:empty {
+    display: none;
+  }
+
+  @include below(sm) {
+    margin-bottom: 30px;
+  }
+}
+
+.section-body__arrow {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  bottom: -65px;
+  left: 50%;
+  margin-left: -10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #bababa;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-right: 4px solid #bababa;
+    border-bottom: 4px solid #bababa;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
