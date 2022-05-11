@@ -29,7 +29,7 @@ $products = new WP_Query([
           <div class="catalog-body__products">
             <div class="catalog-grid">
               <?php while ($products->have_posts()): ?>
-              <?php $products->the_post()?>
+              <?php $products->the_post() ?>
               <div class="catalog-grid__cell">
                 <article class="catalog-card">
                   <figure class="catalog-card__image">
@@ -39,6 +39,25 @@ $products = new WP_Query([
                     <h2 class="catalog-card__title">
                       <?php echo (get_field('section_title-in-card') ?: get_the_title()) ?>
                     </h2>
+
+                    <?php
+                    $children = new WP_Query([
+                      'post_type' => 'page',
+                      'order' => 'ASC',
+                      'orderby' => 'menu_order',
+                      'post_parent' => get_the_ID()
+                    ]);
+                    ?>
+                    <?php if ($children->have_posts()): ?>
+                    <div class="catalog-card__children">
+                      <?php while($children->have_posts()): $children->the_post(); ?>
+                      <div class="catalog-card__children-item">
+                        <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                      </div>
+                      <?php endwhile; ?>
+                    </div>
+                    <?php endif; ?>
+
                     <div class="catalog-card__more">
                       <a href="<?php the_permalink() ?>" class="ui-button-more">
                         Узнать больше
