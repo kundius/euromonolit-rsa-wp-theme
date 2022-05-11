@@ -21,7 +21,21 @@ $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $
 
       <section class="page-body product-body">
         <div class="ui-container">
-          <div class="product-body__content ui-content"><?php the_content() ?></div>
+          <?php if ($content = get_field('product_content')): ?>
+          <div class="product-body__content">
+            <?php if (!empty($content['left'])): ?>
+            <div class="product-body__content-left">
+              <?php echo $content['left'] ?>
+            </div>
+            <?php endif ?>
+
+            <?php if (!empty($content['right'])): ?>
+            <div class="product-body__content-right">
+              <?php echo $content['right'] ?>
+            </div>
+            <?php endif ?>
+          </div>
+          <?php endif ?>
 
           <?php if (count($gallery_items) > 0): ?>
           <div class="product-gallery">
@@ -75,6 +89,14 @@ $gallery_ids = implode(',', array_map(function($item) { return $item['id']; }, $
       <?php get_template_part('partials/section-order') ?>
 
       <?php get_template_part('partials/section-how-we-work') ?>
+
+      <?php if ($content = get_the_content()): ?>
+      <section class="page-body">
+        <div class="ui-container">
+          <div class="page-body__content ui-content"><?php echo $content ?></div>
+        </div>
+      </section>
+      <?php endif ?>
 
       <?php get_template_part('partials/footer') ?>
     </div>

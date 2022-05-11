@@ -101,14 +101,33 @@
 }
 
 .product-body__content {
-  margin-bottom: 60px;
-
-  &:empty {
-    display: none;
-  }
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -50px;
 
   @include below(sm) {
-    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+.product-body__content-left {
+  padding-left: 50px;
+  width: 50%;
+
+  @include below(sm) {
+    width: 100%;
+  }
+}
+
+.product-body__content-right {
+  padding-left: 50px;
+  width: 50%;
+
+  @include below(sm) {
+    width: 100%;
   }
 }
 

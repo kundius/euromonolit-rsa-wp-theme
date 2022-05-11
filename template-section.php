@@ -14,7 +14,7 @@ Template Name: Раздел
     <div class="ui-wrapper">
       <?php get_template_part('partials/header') ?>
       <?php get_template_part('partials/page-breadcrumbs') ?>
-      <?php get_template_part('partials/page-headline', null, [ 'is_product' => true ]) ?>
+      <?php get_template_part('partials/page-headline') ?>
 
       <section class="page-body">
         <div class="ui-container">
