@@ -50,11 +50,11 @@ $products = new WP_Query([
                     ?>
                     <?php if ($children->have_posts()): ?>
                     <div class="catalog-card__children">
-                      <?php while($children->have_posts()): $children->the_post(); ?>
+                      <?php foreach($children->posts as $child): ?>
                       <div class="catalog-card__children-item">
-                        <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                        <a href="<?php the_permalink($child->ID) ?>"><?php echo get_the_title($child->ID) ?></a>
                       </div>
-                      <?php endwhile; ?>
+                      <?php endforeach; ?>
                     </div>
                     <?php endif; ?>
 
