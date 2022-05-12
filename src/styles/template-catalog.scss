@@ -39,10 +39,9 @@
 
 .catalog-card__children-item a {
   position: relative;
-  padding-left: 24px;
-  display: block;
+  padding: 2px 8px 2px 24px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.25;
   display: inline-block;
   color: inherit;
   text-decoration: none;
@@ -55,8 +54,8 @@
   width: 10px;
   height: 10px;
   border: 3px solid #df3e10;
-  left: 0;
-  top: 6px;
+  left: 6px;
+  top: 8px;
 }
 
 .catalog-card__children-item a:hover {
